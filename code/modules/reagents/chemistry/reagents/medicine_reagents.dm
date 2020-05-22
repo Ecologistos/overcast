@@ -902,12 +902,12 @@ datum/reagent/medicine/bicaridine
 	overdose_threshold = 30
 
 datum/reagent/medicine/bicaridine/on_mob_life(mob/living/M)
-	M.adjustBruteLoss(-2*REM)
+	M.adjustBruteLoss(-4*REM)
 	..()
 	return
 
 datum/reagent/medicine/bicaridine/overdose_process(mob/living/M)
-	M.adjustBruteLoss(4*REM)
+	M.adjustBruteLoss(8*REM)
 	..()
 	return
 
@@ -938,12 +938,12 @@ datum/reagent/medicine/kelotane
 	overdose_threshold = 30
 
 datum/reagent/medicine/kelotane/on_mob_life(mob/living/M)
-	M.adjustFireLoss(-2*REM)
+	M.adjustFireLoss(-4*REM)
 	..()
 	return
 
 datum/reagent/medicine/kelotane/overdose_process(mob/living/M)
-	M.adjustFireLoss(4*REM)
+	M.adjustFireLoss(8*REM)
 	..()
 	return
 
