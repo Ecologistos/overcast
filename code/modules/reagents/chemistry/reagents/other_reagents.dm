@@ -1109,3 +1109,18 @@
 		var/t_loc = get_turf(O)
 		qdel(O)
 		new /obj/item/clothing/shoes/galoshes/dry(t_loc)
+
+/datum/reagent/bloodrefill
+	name = "Refilling coagulant"
+	id = "eets"
+	description = "Refills blood and stops bleedings. Nice."
+	reagent_state = LIQUID
+	color = "#C8A5DC" // rgb: 200, 165, 220
+
+/datum/reagent/bloodrefill/on_mob_life(mob/living/carbon/M)
+	if(ishuman(M) & M.blood_volume < BLOOD_VOLUME_NORMAL)
+		var/mob/living/carbon/human/H = M
+		H.bleed_rate = min(H.bleed_rate - 2, 8)
+		H.blood_volume +=2.5
+		. = 1
+	return ..() || .

@@ -148,9 +148,9 @@ var/list/global_sidormat_list = list(
 
 	"Medicine" = list(
 		///////////////////////////////	Медикаменты	/////////////////////////////////////////
-		new /datum/data/stalker_equipment("Medkit",						"Аптечка",							/obj/item/weapon/reagent_containers/pill/stalker/aptechka/civilian,			1000,	ROOKIE),
-		new /datum/data/stalker_equipment("Army medkit",				"Армейска&#x44F; аптечка",			/obj/item/weapon/reagent_containers/pill/stalker/aptechka/army,				2500,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Scientific medkit",			"Научна&#x44F; аптечка",			/obj/item/weapon/reagent_containers/pill/stalker/aptechka/scientific,		5000,	VETERAN),
+		new /datum/data/stalker_equipment("Medkit",						"Аптечка",							/obj/item/storage/firstaid/stalker,											1000,	ROOKIE),
+		new /datum/data/stalker_equipment("Army medkit",				"Армейска&#x44F; аптечка",			/obj/item/storage/firstaid/stalker/army,									2500,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Scientific medkit",			"Научна&#x44F; аптечка",			/obj/item/storage/firstaid/stalker/sci,										5000,	VETERAN),
 		new /datum/data/stalker_equipment("Bandage",					"Бинт",								/obj/item/stack/medical/gauze/bint,											750,	ROOKIE),
 		new /datum/data/stalker_equipment("Anti-rad",					"Анти-рад препараты",				/obj/item/weapon/reagent_containers/hypospray/medipen/stalker/antirad,		3500,	ROOKIE)
 		),
