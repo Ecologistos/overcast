@@ -123,8 +123,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/antiburn
 	name = "Anti-burn solution"
-	desc = "Р”Р°РЅРЅС‹Р№ РґРІСѓС…СЂР°Р·РѕРІС‹Р№ РёРЅР¶РµРєС‚РѕСЂ СЃРѕРґРµСЂР¶РёС‚ РІРµС‰РµСЃС‚РІРѕ, РїСЂРё РІРІРµРґРµРЅРёРё СѓСЃРєРѕСЂСЏСЋС‰РµРµ СЂРµРіРµРЅРµСЂР°С†РёСЋ РѕР±РіРѕСЂРµРІС€РёС… С‚РєР°РЅРµР№ С‡РµР»РѕРІРµС‡РµСЃРєРѕРіРѕ С‚РµР»Р°. РќРµ РґРµР»Р°С‚СЊ Р±РѕР»РµРµ РѕРґРЅРѕР№ РёРЅСЉРµРєС†РёРё Р·Р° РєРѕСЂРѕС‚РєРёР№ РїСЂРѕРјРµР¶СѓС‚РѕРє РІСЂРµРјРµРЅРё."
-	eng_desc = "This injector contains a solution that boosts up your burned tissues regeneration. Two-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
+	desc = "This injector contains a solution that boosts up your burned tissues regeneration. Two-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
 	icon_state = "medipen"
 	volume = 50
 	amount_per_transfer_from_this = 25
@@ -132,15 +131,14 @@
 
 /obj/item/reagent_containers/hypospray/medipen/antiburn/mil
 	name = "expanded Anti-burn solution"
-	eng_desc = "This expanded injector contains a solution that boosts up your burned tissues regeneration. Three-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
+	desc = "This expanded injector contains a solution that boosts up your burned tissues regeneration. Three-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
 	volume = 75
 	amount_per_transfer_from_this = 25
 	list_reagents = list("kelotane" = 75)
 
 /obj/item/reagent_containers/hypospray/medipen/antibrute
 	name = "Anti-brute solution"
-	desc = "Р”Р°РЅРЅС‹Р№ РґРІСѓС…СЂР°Р·РѕРІС‹Р№ РёРЅР¶РµРєС‚РѕСЂ СЃРѕРґРµСЂР¶РёС‚ РІРµС‰РµСЃС‚РІРѕ, РїСЂРё РІРІРµРґРµРЅРёРё СѓСЃРєРѕСЂСЏСЋС‰РµРµ Р»РµС‡РµРЅРёРµ СЃСЃР°РґРёРЅ, СЃРёРЅСЏРєРѕРІ, РїРѕСЂРµР·РѕРІ, РїСѓР»РµРІС‹С… СЂР°РЅРµРЅРёР№ Рё РїСЂРѕС‡РёС… СЃС…РѕР¶РёС… СЂР°РЅ. РќРµ РґРµР»Р°С‚СЊ Р±РѕР»РµРµ РѕРґРЅРѕР№ РёРЅСЉРµРєС†РёРё Р·Р° РєРѕСЂРѕС‚РєРёР№ РїСЂРѕРјРµР¶СѓС‚РѕРє РІСЂРµРјРµРЅРё."
-	eng_desc = "This injector contains a solution that boosts up your brute trauma regeneration. Two-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
+	desc = "This injector contains a solution that boosts up your brute trauma regeneration. Two-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
 	icon_state = "medipen"
 	volume = 50
 	amount_per_transfer_from_this = 25
@@ -156,8 +154,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/antitoxin
 	name = "Antitoxin"
-	desc = "Р”Р°РЅРЅС‹Р№ РґРІСѓС…СЂР°Р·РѕРІС‹Р№ РёРЅР¶РµРєС‚РѕСЂ СЃРѕРґРµСЂР¶РёС‚ РІРµС‰РµСЃС‚РІРѕ, РЅРµР№С‚СЂР°Р»РёР·СѓСЋС‰РµРµ Рё РІС‹РІРѕРґСЏС‰РµРµ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР·РІРµСЃС‚РЅС‹С… СЏРґРѕРІ Рё СЃР»РµРіРєР° РїРѕРґР°РІР»СЏСЋС‰РµРµ СЂР°РґРёР°С†РёСЋ."
-	eng_desc = "This injector contains a solution that neutralises most of the known poisons and toxins. Two-time use, so don't dispose of it after first use."
+	desc = "This injector contains a solution that neutralises most of the known poisons and toxins. Two-time use, so don't dispose of it after first use."
 	icon_state = "medipen"
 	volume = 50
 	amount_per_transfer_from_this = 25
@@ -165,8 +162,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/bloodrefill
 	name = "Blood-forming stimulants"
-	desc = "Р”Р°РЅРЅС‹Р№ РґРІСѓС…СЂР°Р·РѕРІС‹Р№ РёРЅР¶РµРєС‚РѕСЂ СЃРѕРґРµСЂР¶РёС‚ РІРµС‰РµСЃС‚РІРѕ, СѓСЃРєРѕСЂСЏСЋС‰РµРµ РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕ РєСЂР°СЃРЅС‹С… РєСЂРѕРІСЏРЅС‹С… С‚РµР»РµС† Рё РјРµРґР»РµРЅРЅРѕ РІРѕСЃСЃС‚Р°РЅР°РІР»РёРІР°СЋС‰РµРµ СѓС‚СЂР°С‡РµРЅРЅСѓСЋ РєСЂРѕРІСЊ."
-	eng_desc = "This injector contains a solution that boosts up your blood regeneration processes in your body and clots existing bleedings. Four-time use, so don't dispose of it after first use."
+	desc = "This injector contains a solution that boosts up your blood regeneration processes in your body and clots existing bleedings. Four-time use, so don't dispose of it after first use."
 	icon_state = "medipen"
 	volume = 100
 	amount_per_transfer_from_this = 25
@@ -174,8 +170,7 @@
 
 /obj/item/reagent_containers/hypospray/medipen/antirad
 	name = "Scientific antirad"
-	desc = "Данный инжектор содержит небольшую дозу вещества, подавляющего эффекты радиоактивного облучения и помогающего справиться с ним."
-	eng_desc = "This injector contains small dosage of an antiradiation substance that suppresses the effects of radiation exposure and helps to cope with it."
+	desc = "This injector contains small dosage of an antiradiation substance that suppresses the effects of radiation exposure and helps to cope with it."
 	icon_state = "medipen"
 	volume = 18
 	amount_per_transfer_from_this = 9
