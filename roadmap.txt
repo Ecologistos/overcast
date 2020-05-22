@@ -1,0 +1,5 @@
+[X] Figure out SQL connection
+[ ] Figure out changelog delivery
+[ ] Slower mob speed
+[ ] Write rules
+[ ] Implement CS jackets

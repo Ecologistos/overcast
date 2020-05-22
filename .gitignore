@@ -3,3 +3,7 @@
 *.int
 *.lk
 *.zip
+/cfg
+/config
+/contributions
+/data
