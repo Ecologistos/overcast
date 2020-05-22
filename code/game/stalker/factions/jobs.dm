@@ -53,67 +53,15 @@
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	back = null
 
-//donat-equip for atelerd
-/datum/job/stalker/atelerd
-	title = "Svoboda Special"
-	faction = "Station"
-
-	selection_color = "#00FF00"
-
-	total_positions = 1
-	spawn_positions = 1
-	req_admin_notify = 1
-	whitelist_only = 1
-
-	outfit = /datum/outfit/stalker/atelerd
-
-/datum/outfit/stalker/atelerd // For select_equipment
-	name = "Svoboda Special"
-
-	ears = null
-	belt = /obj/item/weapon/gun/projectile/automatic/pistol/marta
-	id = /obj/item/device/stalker_pda
-	shoes = /obj/item/clothing/shoes/jackboots/warm
-	suit = /obj/item/clothing/suit/hooded/kozhanka/strazh/atelerd
-	back = /obj/item/weapon/storage/backpack/stalker/tourist
-	//back2 = /obj/item/weapon/gun/projectile/shotgun/chaser
-	suit_store = /obj/item/weapon/gun/projectile/shotgun/chaser
-	l_pocket = /obj/item/stack/spacecash/c5000
-
 /datum/outfit/stalker/atelerd/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = UNIFORMPICK
 	r_pocket = pick(/obj/item/weapon/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/weapon/reagent_containers/food/snacks/stalker/konserva,/obj/item/weapon/reagent_containers/food/snacks/stalker/baton)
 
-/datum/outfit/stalker/palputin // For select_equipment
-	name = "Nedomonolith"
-
-	ears = null
-	belt = null
-	id = /obj/item/device/stalker_pda
-	shoes = /obj/item/clothing/shoes/jackboots/warm
-	suit = /obj/item/clothing/suit/hooded/kozhanka/white/monolith
-	back = /obj/item/weapon/storage/backpack/stalker/civilian
-	//back2 = null
-	l_pocket = /obj/item/stack/spacecash/c5000
-
 /datum/outfit/stalker/atelerd/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = UNIFORMPICK
 	r_pocket = pick(/obj/item/weapon/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/stack/medical/gauze/bint,/obj/item/weapon/reagent_containers/food/snacks/stalker/konserva,/obj/item/weapon/reagent_containers/food/snacks/stalker/baton)
-
-/datum/job/stalker/jacknoir
-	title = "Machinist"
-	faction = "Station"
-
-	selection_color = "#00FF00"
-
-	total_positions = 1
-	spawn_positions = 1
-	req_admin_notify = 1
-	whitelist_only = 1
-
-	outfit = /datum/outfit/stalker/machinist
 
 /datum/outfit/stalker/machinist // For select_equipment
 	name = "Machinist"

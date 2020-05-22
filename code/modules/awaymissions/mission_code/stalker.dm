@@ -1,9 +1,22 @@
+/**
+ * Game area designations.
+ *
+**/
+
+#define ENVIRONMENT_SIDOROVICH_BASEMENT 1
+#define ENVIRONMENT_BUILDINGS 2
+#define ENVIRONMENT_OUTDOORS 3
+#define ENVIRONMENT_BAR 4
+#define ENVIRONMENT_BANDIT_BAR 5
+
+// Abstract stalker map area
 /area/stalker
 	icon = 'icons/stalker/areas.dmi'
 	name = "Strange Location"
 	icon_state = "away"
 	has_gravity = 1
 
+// Sidorovich's Basement
 /area/stalker/sidor
 	name = "Sidorovich Basement"
 	icon = 'icons/stalker/areas_buildings.dmi'
@@ -12,7 +25,7 @@
 	ambient_music = list()
 	ambient_background = list('sound/stalker/ambience/sidor_music2.ogg', 'sound/stalker/ambience/sidor_music2.ogg', 'sound/stalker/ambience/sidor_music2.ogg', 'sound/stalker/ambience/sidor_music2.ogg')//list('sound/stalker/ambience/sidor_music.ogg','sound/stalker/ambience/sidor_music2.ogg')
 	ambient_background_cooldown = list(700, 700, 700, 700)
-	environment = 5
+	environment = ENVIRONMENT_SIDOROVICH_BASEMENT
 	safezone = 1
 
 /area/stalker/blowout
@@ -61,34 +74,34 @@
 	ambient_environment_cooldown = 420
 	ambient_background = list(null, null,'sound/stalker/ambience/rnd_outdoor_night/zat_bkg_tuman.ogg', 'sound/stalker/ambience/rnd_outdoor_night/ambient_night_11.ogg', null) // 'sound/stalker/ambience/rnd_outdoor/rnd_insect_5.ogg' - evening
 	ambient_background_cooldown = list(null, null, 220, 420, null) //280 - evening
-	environment = 15
+	environment = ENVIRONMENT_OUTDOORS
 
 /area/stalker/blowout/outdoor/safezone
 	name = "Outdoor Safezone"
 	icon = 'icons/stalker/areas_outdoor_blowout.dmi'
 	icon_state = "outdoor"
-	environment = 2
+	environment = ENVIRONMENT_OUTDOORS
 	safezone = 1
 
 /area/stalker/blowout/outdoor/safezone/bar
 	name = "Bar Outdoor Safezone"
 	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "buildings" // TODO: Change this to unique icon.
-	environment = 5
+	environment = ENVIRONMENT_BAR
 
 /area/stalker/blowout/buildings
 	name = "Buildings"
 	icon = 'icons/stalker/areas_buildings_blowout.dmi'
 	icon_state = "buildings"
 	requires_power = 1
-	environment = 2
+	environment = ENVIRONMENT_BUILDINGS
 
 /area/stalker/blowout/buildings/safezone
 	name = "Buildings Safezone"
 	icon = 'icons/stalker/areas_buildings_blowout.dmi'
 	icon_state = "buildings"
 	requires_power = 1
-	environment = 2
+	environment = ENVIRONMENT_BUILDINGS
 	safezone = 1
 
 /area/stalker/buildings
@@ -96,20 +109,20 @@
 	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "buildings"
 	requires_power = 1
-	environment = 5
+	environment = ENVIRONMENT_BUILDINGS
 
 /area/stalker/buildings/banditbar
 	name = "Bandit Bar"
 	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "buildings" // TODO: Change this to unique icon.
 	requires_power = 1
-	environment = 5
+	environment = ENVIRONMENT_BANDIT_BAR
 
 /area/stalker/buildings/safezone/banditbar
 	name = "Bandit Bar Safezone"
 	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "buildings" // TODO: Change this to unique icon.
-	environment = 5
+	environment = ENVIRONMENT_BANDIT_BAR
 
 
 /area/stalker/adminspace
