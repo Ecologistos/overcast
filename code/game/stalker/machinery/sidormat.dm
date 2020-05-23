@@ -26,7 +26,7 @@ var/list/global_sidormat_list = list(
 		new /datum/data/stalker_equipment("Kiparis",		" ËÔ‡ËÒ",			/obj/item/weapon/gun/projectile/automatic/kiparis,					10000,	ROOKIE),
 		new /datum/data/stalker_equipment("PPSh",			"œœÿ",				/obj/item/weapon/gun/projectile/automatic/ppsh,						15000,	ROOKIE),
 		new /datum/data/stalker_equipment("MP-5",			"Ãœ-5",				/obj/item/weapon/gun/projectile/automatic/mp5,						18000,	ROOKIE),
-		new /datum/data/stalker_equipment("AK-74S",			"¿ -74”",			/obj/item/weapon/gun/projectile/automatic/aksu74 ,					24000,	ROOKIE),
+		new /datum/data/stalker_equipment("AK-74S",			"¿ -74”",			/obj/item/weapon/gun/projectile/automatic/aksu74,					24000,	ROOKIE),
 		new /datum/data/stalker_equipment("AK-74",			"¿ -74",			/obj/item/weapon/gun/projectile/automatic/ak74,						30000,	ROOKIE),
 		new /datum/data/stalker_equipment("AS-96",			"¿—-96",			/obj/item/weapon/gun/projectile/automatic/abakan,					40000,	EXPERIENCED),
 		new /datum/data/stalker_equipment("LR-300",			"À–-300",			/obj/item/weapon/gun/projectile/automatic/tpc301,					40000,	EXPERIENCED),

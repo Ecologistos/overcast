@@ -5,8 +5,8 @@
 				if(istype(AM, /obj/item))
 					var/obj/item/I = AM
 					if(isturf(I.loc))
-						visible_message("<span class='warning'>[src] fails to catch [I]!</span>")
 						//put_in_active_hand(I)
+						visible_message("<span class='warning'>[src] fails to catch [I]!</span>") // Now this is "ugly, but easy"
 						throw_mode_off()
 						return 1
 	..()
