@@ -513,15 +513,15 @@
 		var/damage_ = 0
 		switch(get_dist(src, H))
 			if(0 to 2)
-				damage_ = 35
+				damage_ = 30
 			if(3 to 4)
-				damage_ = 25
+				damage_ = 20
 			if(5 to 6)
 				damage_ = 15
 			if(7 to 8)
-				damage_ = 7
+				damage_ = 10
 			if(8 to INFINITY)
-				damage_ = 25 / get_dist(src, H)
+				damage_ = 30 / get_dist(src, H)
 		H.apply_damage(damage_, PSY, null, blocked = getarmor("head", "psy", 0))
 		if(H.psyloss >= 200)
 			H.zombiefied = MENTAL_ZOMBIE
@@ -562,7 +562,7 @@
 				last_attack_time = world.time
 				H << sound('sound/stalker/mobs/mutants/attack/controller_whoosh.ogg', wait = 0, channel = 47, volume = 50)
 				visible_message("<span class='danger'><b>[src]</b> stares right into [A] eyes!</span>")
-				H.apply_damage(200, PSY, null, blocked = getarmor("head", "psy", 0))
+				H.apply_damage(100, PSY, null, blocked = getarmor("head", "psy", 0))
 				if(H.psyloss >= 200)
 					H.zombiefied = MENTAL_ZOMBIE
 
