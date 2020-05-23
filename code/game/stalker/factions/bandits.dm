@@ -1,14 +1,14 @@
-/*
-Assistant
-*/
+/**
+ * Bandits faction file.
+ *
+ * Bandit together is the essence of BYOND.
+**/
 /datum/job/bandit
 	title = "Bandit"
 	faction_s = "Bandits"
-//	flag = ASSISTANT
-//	department_flag = CIVILIAN
 	faction = "Station"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 12
+	spawn_positions = 12
 	supervisors = "Pahan"
 	selection_color = "#000000"
 	access = list()			//See /datum/job/assistant/get_access()
@@ -18,9 +18,10 @@ Assistant
 	outfit = /datum/outfit/job/bandit
 
 /datum/job/bandit_pahan
-	title = "Pahan"
+	title = "Bandit Pahan"
 	faction_s = "Bandits"
 	faction = "Station"
+	whitelist_only = 0
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = ""

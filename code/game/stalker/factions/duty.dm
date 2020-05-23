@@ -1,44 +1,48 @@
 /**
- * Dolg faction file.
+ * Duty faction file.
  *
  * I think this file hates itself out of duty.
 **/
 
 /** Jobs **/
 
-// Dolg soldier
-/datum/job/dolg/soldat
-	title = "Soldat Dolga"
-	faction_s = "Dolg"
+// Duty recruit
+/datum/job/duty_recruit/
+
+// Duty soldier
+/datum/job/duty_soldier
+	title = "Duty Soldier"
+	faction_s = "Duty"
 	faction = "Station"
-	total_positions = 10
-	spawn_positions = 10
-	supervisors = "Maior" // Подскользнётся.
+	whitelist_only = 0
+	total_positions = 8
+	spawn_positions = 8
+	supervisors = "Major" // Bound to slip
 	selection_color = "#CC0000"
 	access = list()
 	minimal_access = list()
-	limit_per_player = 4
-	outfit = /datum/outfit/job/dolg/soldat
+	outfit = /datum/outfit/job/duty_soldier
 
-// Dolg leader
-/datum/job/dolg/maior
-	title = "Maior"
-	faction_s = "Dolg"
+// Duty leader
+/datum/job/duty_leader
+	title = "Duty Major"
+	faction_s = "Duty"
 	faction = "Station"
+	whitelist_only = 0
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = "#CC0000"
-	outfit = /datum/outfit/job/dolg/maior
+	outfit = /datum/outfit/job/duty_leader
 	real_rank = "Lieutenant"
 
 /** Outfits **/
 
-// Dolg soldier
-/datum/outfit/job/duty
-	name = "Soldat Dolga"
-	faction_s = "Dolg"
+// Duty soldier
+/datum/outfit/job/duty_soldier
+	name = "Duty Major"
+	faction_s = "Duty"
 
-/datum/outfit/job/dolg/soldat/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/duty_soldier/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = null
 	uniform = UNIFORMPICK
@@ -47,17 +51,18 @@
 	belt = /obj/item/weapon/kitchen/knife/tourist
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/device/stalker_pda
-	suit_store = /obj/item/weapon/gun/projectile/automatic/aksu74
+	suit_store = /obj/item/weapon/gun/projectile/automatic/kiparis
 	shoes = /obj/item/clothing/shoes/jackboots/warm
-	backpack_contents = list(/obj/item/ammo_box/stalker/b545 = 1, /obj/item/device/flashlight/seclite = 1)
-	l_pocket = pick(/obj/item/weapon/reagent_containers/food/snacks/stalker/kolbasa,/obj/item/weapon/reagent_containers/food/snacks/stalker/baton)
+	backpack_contents = list(/obj/item/ammo_box/stalker/b9x18 = 1, /obj/item/device/flashlight/seclite = 1)
+	l_pocket = pick(/obj/item/weapon/reagent_containers/food/snacks/stalker/kolbasa, /obj/item/weapon/reagent_containers/food/snacks/stalker/baton)
+	r_pocket = /obj/item/ammo_box/magazine/stalker/kiparis
 
-// Dolg leader
-/datum/outfit/job/dolg/maior
-	name = "Maior"
-	faction_s = "Dolg"
+// Duty leader
+/datum/outfit/job/duty_leader
+	name = "Duty Major"
+	faction_s = "Duty"
 
-/datum/outfit/job/dolg/maior/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/duty_leader/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/steel
 	uniform = UNIFORMPICK
@@ -65,7 +70,7 @@
 	belt = /obj/item/weapon/kitchen/knife/tourist
 	gloves = /obj/item/clothing/gloves/fingerless
 	id = /obj/item/device/stalker_pda
-	suit_store = /obj/item/weapon/gun/projectile/shotgun/ithaca
+	suit_store = /obj/item/weapon/gun/projectile/automatic/aksu74
 	backpack_contents = list(/obj/item/device/flashlight/seclite = 1)
 	shoes = /obj/item/clothing/shoes/jackboots/warm
 	l_pocket = pick(/obj/item/weapon/reagent_containers/food/snacks/stalker/kolbasa, /obj/item/weapon/reagent_containers/food/snacks/stalker/baton)
@@ -76,8 +81,6 @@
 	title = "Barman2"
 	faction_s = "Loners"
 	locked = 1
-//	flag = ASSISTANT
-//	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = -1
@@ -87,7 +90,6 @@
 	minimal_access = list()	//See /datum/job/assistant/get_access()
 	whitelist_only = 1
 	outfit = /datum/outfit/job/barman2
-	//faction_s = "Îäèíî÷êè"
 
 /datum/outfit/job/barman2
 	name = "Barman"
