@@ -805,7 +805,11 @@
 #include "code\game\stalker\machinery\door.dm"
 #include "code\game\stalker\machinery\sidormat.dm"
 #include "code\game\stalker\mobs\mobspawners.dm"
+
+// Mutant files
+#include "code\game\stalker\mobs\hostiles\mutants\controller.dm"
 #include "code\game\stalker\mobs\hostiles\mutants\mutants.dm"
+
 #include "code\game\stalker\mobs\living\carbon\verbs.dm"
 #include "code\game\stalker\modules\ambient_system.dm"
 #include "code\game\stalker\modules\blowout.dm"
