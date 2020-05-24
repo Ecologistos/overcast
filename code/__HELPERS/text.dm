@@ -16,7 +16,7 @@
 // Run all strings to be used in an SQL query through this proc first to properly escape out injection attempts.
 /proc/sanitizeSQL(t as text)
 	var/sqltext = dbcon.Quote(t);
-	return copytext(sqltext, 2, lentext(sqltext));//Quote() adds quotes around input, we already do that
+	return copytext(sqltext, 2, length(sqltext));//Quote() adds quotes around input, we already do that
 
 /proc/format_table_name(table as text)
 	return sqlfdbktableprefix + table
@@ -262,7 +262,8 @@ proc/russian_reverse_text(msg)
 
 //Returns a string with the first element of the string capitalized.
 /proc/capitalize(t as text)
-	return uppertext(copytext(t, 1, 2)) + copytext(t, 2)
+	var/first = ascii2text(text2ascii(t))
+	return upperrustext(first) + copytext(t, length(first) + 1)
 
 /proc/pointization(text as text)
 	if (!text)
@@ -304,9 +305,9 @@ proc/russian_reverse_text(msg)
 //is in the other string at the same spot (assuming it is not a replace char).
 //This is used for fingerprints
 	var/newtext = text
-	if(lentext(text) != lentext(compare))
+	if(length(text) != length(compare))
 		return 0
-	for(var/i = 1, i < lentext(text), i++)
+	for(var/i = 1, i < length(text), i++)
 		var/a = copytext(text,i,i+1)
 		var/b = copytext(compare,i,i+1)
 //if it isn't both the same letter, or if they are both the replacement character
@@ -326,7 +327,7 @@ proc/russian_reverse_text(msg)
 	if(!text || !character)
 		return 0
 	var/count = 0
-	for(var/i = 1, i <= lentext(text), i++)
+	for(var/i = 1, i <= length(text), i++)
 		var/a = copytext(text,i,i+1)
 		if(a == character)
 			count++
@@ -487,12 +488,13 @@ var/list/binary = list("0","1")
 	var/t = ""
 	for(var/i = 1, i <= length(text), i++)
 		var/a = text2ascii(text, i)
-		if (a > 223)
-			t += ascii2text(a - 32)
-		else if (a == 184)
-			t += ascii2text(168)
-		else t += ascii2text(a)
-	t = replacetext(t,"&#255;","&#255;")
+		if (a == 1105 || a == 1025)
+			t += ascii2text(1025)
+			continue
+		if (a < 1072 || a > 1105)
+			t += ascii2text(a)
+			continue
+		t += ascii2text(a - 32)
 	return t
 
 
