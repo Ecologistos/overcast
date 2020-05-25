@@ -100,10 +100,8 @@ Sorry Giacom. Please don't be mad :(
 	if((M.a_intent == "help" || M.restrained()) && (a_intent == "help" || restrained()) && M.canmove && canmove && !M.buckled && !M.buckled_mob) // mutual brohugs all around!
 		if(loc && !loc.Adjacent(M.loc))
 			return 1
-		now_pushing = 1
-		var/oldloc = loc
-		var/oldMloc = M.loc
 
+		now_pushing = 1
 
 		var/M_passmob = (M.pass_flags & PASSMOB) // we give PASSMOB to both mobs to avoid bumping other mobs during swap.
 		var/src_passmob = (pass_flags & PASSMOB)
