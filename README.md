@@ -2,4 +2,4 @@
 
 Forked from esthvan\call_of_flesh, uses TGcode.
 
-**Discord:** https://discord.gg/S2e3GF2
+**Discord:** https://discord.gg/huh9kzS
