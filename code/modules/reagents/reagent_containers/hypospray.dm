@@ -120,3 +120,58 @@
 	volume = 60
 	amount_per_transfer_from_this = 30
 	list_reagents = list("atropine" = 10, "epinephrine" = 10, "salbutamol" = 20, "spaceacillin" = 20)
+
+/obj/item/weapon/reagent_containers/hypospray/medipen/antiburn
+	name = "Anti-burn solution"
+	desc = "This injector contains a solution that boosts up your burned tissues regeneration. Two-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
+	icon_state = "medipen"
+	volume = 50
+	amount_per_transfer_from_this = 25
+	list_reagents = list("kelotane" = 50)
+
+/obj/item/weapon/reagent_containers/hypospray/medipen/antiburn/mil
+	name = "expanded Anti-burn solution"
+	desc = "This expanded injector contains a solution that boosts up your burned tissues regeneration. Three-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
+	volume = 75
+	amount_per_transfer_from_this = 25
+	list_reagents = list("kelotane" = 75)
+
+/obj/item/weapon/reagent_containers/hypospray/medipen/antibrute
+	name = "Anti-brute solution"
+	desc = "This injector contains a solution that boosts up your brute trauma regeneration. Two-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
+	icon_state = "medipen"
+	volume = 50
+	amount_per_transfer_from_this = 25
+	list_reagents = list("bicaridine" = 50)
+
+/obj/item/weapon/reagent_containers/hypospray/medipen/antibrute/mil
+	name = "expanded Anti-brute solution"
+	eng_desc = "This expanded injector contains a solution that boosts up your brute trauma regeneration. Three-time use, so don't dispose of it after first use. Do not make more than one injection in quick succesion."
+	icon_state = "medipen"
+	volume = 75
+	amount_per_transfer_from_this = 25
+	list_reagents = list("bicaridine" = 75)
+
+/obj/item/weapon/reagent_containers/hypospray/medipen/antitoxin
+	name = "Antitoxin"
+	desc = "This injector contains a solution that neutralises most of the known poisons and toxins. Two-time use, so don't dispose of it after first use."
+	icon_state = "medipen"
+	volume = 50
+	amount_per_transfer_from_this = 25
+	list_reagents = list("antitoxin" = 50)
+
+/obj/item/weapon/reagent_containers/hypospray/medipen/bloodrefill
+	name = "Blood-forming stimulants"
+	desc = "This injector contains a solution that boosts up your blood regeneration processes in your body and clots existing bleedings. Four-time use, so don't dispose of it after first use."
+	icon_state = "medipen"
+	volume = 100
+	amount_per_transfer_from_this = 25
+	list_reagents = list("iron" = 50, "eets" = 50)
+
+/obj/item/weapon/reagent_containers/hypospray/medipen/antirad
+	name = "Scientific antirad"
+	desc = "This injector contains small dosage of an antiradiation substance that suppresses the effects of radiation exposure and helps to cope with it."
+	icon_state = "medipen"
+	volume = 18
+	amount_per_transfer_from_this = 9
+	list_reagents = list("pen_acid" = 18)

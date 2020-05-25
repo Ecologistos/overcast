@@ -124,6 +124,58 @@
 	new /obj/item/clothing/glasses/hud/health/night(src)
 	return
 
+/obj/item/weapon/storage/firstaid/stalker
+	name = "medkit"
+	desc = "All-purpose single-use medkit. Allows to handle injuries of different types and degrees of complexity. Doesn't stop bleeding!"
+	icon = 'icons/stalker/items.dmi'
+	icon_state = "aptechkar"
+	w_class = 2
+	max_w_class = 2
+
+/obj/item/weapon/storage/firstaid/stalker/civ
+
+/obj/item/weapon/storage/firstaid/stalker/civ/New()
+	..()
+	if(empty) return
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antiburn(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antibrute(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antitoxin(src)
+	new /obj/item/weapon/reagent_containers/pill/salbutamol(src)
+	new /obj/item/weapon/reagent_containers/pill/salbutamol(src)
+	return
+
+/obj/item/weapon/storage/firstaid/stalker/army
+	name = "army medkit"
+	desc = "Specialized medical kit to provide first-aid in case of in-battle injuries. The kit includes Menadion-based medicine for faster blood coagulation, painkillers, antibiotics, immunity stimulators, so as a kit to remove shrapnel and bullets from your body. Stops the bleeding."
+	icon_state = "aptechkab"
+
+/obj/item/weapon/storage/firstaid/stalker/army/New()
+	..()
+	if(empty) return
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antiburn/mil(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antibrute/mil(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antitoxin(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/bloodrefill(src)
+	new /obj/item/weapon/reagent_containers/pill/salbutamol(src)
+	new /obj/item/weapon/reagent_containers/pill/salbutamol(src)
+	return
+
+/obj/item/weapon/storage/firstaid/stalker/sci
+	name = "scientific medkit"
+	desc = "Medical set, designed especially for work in the Zone. The set includes means of healing wounds as well as means of eliminating radionuclides from the body. Prevents the development of radiowave sickness and lowers the dose of accumulated radiation. Stops the bleeding."
+	icon_state = "aptechkay"
+
+/obj/item/weapon/storage/firstaid/stalker/sci/New()
+	..()
+	if(empty) return
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antiburn(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antibrute(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antitoxin(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/bloodrefill(src)
+	new /obj/item/weapon/reagent_containers/hypospray/medipen/antirad(src)
+	new /obj/item/weapon/reagent_containers/pill/salbutamol(src)
+	new /obj/item/weapon/reagent_containers/pill/salbutamol(src)
+	return
 
 /*
  * Pill Bottles

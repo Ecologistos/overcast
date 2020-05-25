@@ -479,7 +479,7 @@
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 
 /datum/reagent/medicine/salbutamol/on_mob_life(mob/living/M)
-	M.adjustOxyLoss(-3*REM)
+	M.adjustOxyLoss(-6*REM)
 	if(M.losebreath >= 4)
 		M.losebreath -= 2
 	..()
@@ -902,12 +902,12 @@ datum/reagent/medicine/bicaridine
 	overdose_threshold = 30
 
 datum/reagent/medicine/bicaridine/on_mob_life(mob/living/M)
-	M.adjustBruteLoss(-2*REM)
+	M.adjustBruteLoss(-4*REM)
 	..()
 	return
 
 datum/reagent/medicine/bicaridine/overdose_process(mob/living/M)
-	M.adjustBruteLoss(4*REM)
+	M.adjustBruteLoss(8*REM)
 	..()
 	return
 
@@ -920,12 +920,12 @@ datum/reagent/medicine/dexalin
 	overdose_threshold = 30
 
 datum/reagent/medicine/dexalin/on_mob_life(mob/living/M)
-	M.adjustOxyLoss(-2*REM)
+	M.adjustOxyLoss(-4*REM)
 	..()
 	return
 
 datum/reagent/medicine/dexalin/overdose_process(mob/living/M)
-	M.adjustOxyLoss(4*REM)
+	M.adjustOxyLoss(8*REM)
 	..()
 	return
 
@@ -938,12 +938,12 @@ datum/reagent/medicine/kelotane
 	overdose_threshold = 30
 
 datum/reagent/medicine/kelotane/on_mob_life(mob/living/M)
-	M.adjustFireLoss(-2*REM)
+	M.adjustFireLoss(-4*REM)
 	..()
 	return
 
 datum/reagent/medicine/kelotane/overdose_process(mob/living/M)
-	M.adjustFireLoss(4*REM)
+	M.adjustFireLoss(8*REM)
 	..()
 	return
 
@@ -957,15 +957,15 @@ datum/reagent/medicine/antitoxin
 	overdose_threshold = 30
 
 datum/reagent/medicine/antitoxin/on_mob_life(mob/living/M)
-	M.adjustToxLoss(-2*REM)
+	M.adjustToxLoss(-4*REM)
 	for(var/datum/reagent/toxin/R in M.reagents.reagent_list)
 		if(R != src)
-			M.reagents.remove_reagent(R.id,1)
+			M.reagents.remove_reagent(R.id,2)
 	..()
 	return
 
 datum/reagent/medicine/antitoxin/overdose_process(mob/living/M)
-	M.adjustToxLoss(4*REM) // End result is 2 toxin loss taken, because it heals 2 and then removes 4.
+	M.adjustToxLoss(8*REM) // End result is 2 toxin loss taken, because it heals 2 and then removes 4.
 	..()
 	return
 

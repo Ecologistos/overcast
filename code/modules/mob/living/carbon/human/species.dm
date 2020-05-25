@@ -843,7 +843,7 @@
 	if(!(RADIMMUNE in specflags))
 		//if(H.radiation)
 			//if (H.radiation > 100)
-		//		H << "<span class='danger'>Опасный уровень радиации. Необходима защита, чтобы пройти.</span>"
+		//		H << "<span class='danger'>ГЋГЇГ Г±Г­Г»Г© ГіГ°Г®ГўГҐГ­Гј Г°Г Г¤ГЁГ Г¶ГЁГЁ. ГЌГҐГ®ГЎГµГ®Г¤ГЁГ¬Г  Г§Г Г№ГЁГІГ , Г·ГІГ®ГЎГ» ГЇГ°Г®Г©ГІГЁ.</span>"
 		//		H.Weaken(10)
 		//		H.emote("collapse")
 
@@ -962,13 +962,6 @@
 				M.do_cpr(H)
 
 		if("grab")
-			var/area/B = get_area(H.loc)
-			if(B.safezone)
-				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
-					M << "<span class='warning'>You can't fight in the safezone!</span>"
-				else
-					M << "<span class='warning'>Вы не можете дратьc&#255; в этой зоне!</span>"
-				return 0
 			if(attacker_style && attacker_style.grab_act(M,H))
 				return 1
 			else
@@ -976,13 +969,6 @@
 				return 1
 
 		if("harm")
-			var/area/B = get_area(H.loc)
-			if(B.safezone)
-				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
-					M << "<span class='warning'>You can't fight in the safezone!</span>"
-				else
-					M << "<span class='warning'>Вы не можете дратьc&#255; в этой зоне!</span>"
-				return 0
 			if(attacker_style && attacker_style.harm_act(M,H))
 				return 1
 			else
@@ -1020,13 +1006,6 @@
 					H.forcesay(hit_appends)
 				*/
 		if("disarm")
-			var/area/B = get_area(H.loc)
-			if(B.safezone)
-				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
-					M << "<span class='warning'>You can't fight in the safezone!</span>"
-				else
-					M << "<span class='warning'>Вы не можете дратьc&#255; в этой зоне!</span>"
-				return 0
 			if(attacker_style && attacker_style.disarm_act(M,H))
 				return 1
 			else
