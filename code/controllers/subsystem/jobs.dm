@@ -3,8 +3,7 @@ var/datum/subsystem/job/SSjob
 /datum/subsystem/job
 	name = "Jobs"
 	priority = 5
-	var/list/allowed_jobs = list(/datum/job/assistant,
-							/datum/job/bandit)
+	var/list/allowed_jobs = list()
 	var/list/occupations = list()		//List of all jobs
 	var/list/unassigned = list()		//Players who need jobs
 	var/list/job_debug = list()			//Debug info
