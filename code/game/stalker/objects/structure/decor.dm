@@ -336,12 +336,6 @@
 	eng_desc = "Portrait of the last general secretary of Central Committee of the Communist Party of the Soviet Union."
 	icon_state = "gorbachev"
 
-/obj/structure/stalker/cacheable/painting/stalin
-	name = "painting"
-	desc = "Портрет второго секретар&#255; ЦК КПСС."
-	eng_desc = "Portrait of the second general secretary of Central Committee of the Communist Party of the Soviet Union."
-	icon_state = "stalin"
-
 /obj/structure/stalker/cacheable/painting/lenin
 	name = "painting"
 	desc = "Портрет первого секретар&#255; ЦК КПСС."
