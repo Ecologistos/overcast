@@ -346,7 +346,7 @@
 "gH" = (/obj/structure/stalker/cacheable/bochka,/turf/stalker/floor/wood/oldgor,/area/stalker/blowout/kordon/buildings)
 "gI" = (/obj/structure/stalker/blocks/block1/r,/turf/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
 "gJ" = (/obj/structure/stalker/blocks/vanish/pipe/pipe3{dir = 1; icon_state = "truba3"; pixel_x = 4; pixel_y = 0; tag = "icon-truba3 (NORTH)"},/obj/rad/rad_low,/turf/stalker/floor/gryaz,/area/stalker/blowout/outdoor)
-"gK" = (/obj/effect/landmark/latejoin/bandit,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
+"gK" = (/obj/effect/landmark/latejoin/bandit_soldier,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "gL" = (/obj/machinery/campfire/barrel,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "gM" = (/obj/structure/barricade/stalker/box,/obj/machinery/light/small{tag = "icon-bulb1 (EAST)"; icon_state = "bulb1"; dir = 4},/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "gN" = (/obj/item/weapon/shovel,/turf/stalker/floor/wood/oldgor,/area/stalker/blowout/kordon/buildings)
