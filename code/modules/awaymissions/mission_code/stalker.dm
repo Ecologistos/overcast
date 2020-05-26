@@ -143,7 +143,7 @@
 /** Kordon Map **/
 
 // Kordon
-/area/stalker/kordon/kordon/
+/area/stalker/kordon
 	//icon = 'icons/stalker/map/kordon/kordon.dmi'
 	requires_power = 1
 
