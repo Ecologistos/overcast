@@ -39,7 +39,7 @@
 "aM" = (/obj/structure/grille/stalker{icon_state = "fence3"},/turf/stalker/floor/digable/grass,/area/stalker/blowout/outdoor/backwater)
 "aN" = (/obj/structure/table/stalker/wood,/obj/structure/stalker/cacheable/radio,/turf/stalker/floor/wood/oldgor,/area/stalker/blowout/buildings/backwater)
 "aO" = (/obj/structure/stalker/cacheable/painting/lenin{pixel_y = 32},/obj/structure/barricade/stalker/box,/turf/stalker/floor/wood/oldgor,/area/stalker/blowout/buildings/backwater)
-"aP" = (/obj/structure/stalker/cacheable/painting/stalin{pixel_x = 0; pixel_y = 32},/turf/stalker/floor/wood/oldgor,/area/stalker/blowout/buildings/backwater)
+"aP" = (/obj/structure/stalker/cacheable/painting/lenin{pixel_x = 0; pixel_y = 32},/turf/stalker/floor/wood/oldgor,/area/stalker/blowout/buildings/backwater)
 "aQ" = (/turf/simulated/mineral,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aR" = (/obj/structure/flora/stalker/bush,/turf/stalker/floor/gryaz/gryaz2,/area/stalker/blowout/outdoor/backwater/sawmill)
 "aS" = (/obj/structure/stalker/okno/window1,/turf/simulated/wall/stalker/bricks_yellow,/area/stalker/blowout/outdoor/backwater)
