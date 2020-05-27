@@ -294,11 +294,11 @@
 	environment = 8
 
 /area/stalker/agroprom/abandoned_base
-	name = "Abandoned Military Base"
+	name = "Agroprom Abandoned Military Base"
 	icon_state = "abandoned_military_base"
 
 /area/stalker/agroprom/warehouses
-	name = "Warehouses"
+	name = "Agroprom Warehouses"
 	icon_state = "warehouses"
 
 // Rostok
@@ -327,7 +327,7 @@
 	icon_state = "mercenary"
 
 /area/stalker/rostok/headquarters
-	name = "Headquarters"
+	name = "Rostok Headquarters"
 	icon_state = "headquarters"
 
 
