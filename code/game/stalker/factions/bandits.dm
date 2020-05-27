@@ -8,10 +8,10 @@
 
 // Bandit soldier
 /datum/job/bandit_soldier
-	title     = "Bandit"
+	title = "Bandit"
 	faction_s = "Bandits"
-	faction   = "Station"
-	total_positions = 12
+	faction = "Station"
+	total_positions = 5
 	spawn_positions = 5
 	supervisors = "Bandit Pahan"
 	selection_color = "#000000"
@@ -39,7 +39,7 @@
 /datum/job/bandit_trader
 	title     = "Bandit Barman"
 	faction_s = "Bandits"
-	faction = "Station"
+	faction   = "Station"
 
 	total_positions = 1
 	spawn_positions = 1
