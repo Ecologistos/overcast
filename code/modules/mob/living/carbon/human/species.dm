@@ -1021,7 +1021,7 @@
 					H.forcesay(hit_appends)
 				*/
 		if("disarm")
-		var/area/B = get_area(H.loc)
+			var/area/B = get_area(H.loc)
 			if(B.safezone)
 				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
 					M << "<span class='warning'>You can't fight in the safezone!</span>"

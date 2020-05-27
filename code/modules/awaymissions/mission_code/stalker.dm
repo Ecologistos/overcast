@@ -665,6 +665,7 @@
 /area/stalker/byadt/bar
 	name = "Bar"
 	icon_state = "realbar"
+	safezone = 1
 
 /area/stalker/byadt/buildings
 	name = "Buildings"
