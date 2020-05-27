@@ -3,22 +3,27 @@
  *
  * Bandit together is the essence of BYOND.
 **/
-/datum/job/bandit
-	title = "Bandit"
+
+/** Jobs **/
+
+// Bandit soldier
+/datum/job/bandit_soldier
+	title     = "Bandit"
 	faction_s = "Bandits"
-	faction = "Station"
+	faction   = "Station"
 	total_positions = 12
-	spawn_positions = 12
-	supervisors = "Pahan"
+	spawn_positions = 5
+	supervisors = "Bandit Pahan"
 	selection_color = "#000000"
-	access = list()			//See /datum/job/assistant/get_access()
-	minimal_access = list()	//See /datum/job/assistant/get_access()
+	access = list()
+	minimal_access = list()
 	whitelist_only = 0
 	limit_per_player = 2
 	outfit = /datum/outfit/job/bandit
 
-/datum/job/bandit_pahan
-	title = "Bandit Pahan"
+// Bandit leader
+/datum/job/bandit_leader
+	title     = "Bandit Pahan"
 	faction_s = "Bandits"
 	faction = "Station"
 	whitelist_only = 0
@@ -26,25 +31,29 @@
 	spawn_positions = 1
 	supervisors = ""
 	selection_color = "#000000"
-	access = list()			//See /datum/job/assistant/get_access()
-	minimal_access = list()	//See /datum/job/assistant/get_access()
-	outfit = /datum/outfit/job/bandit_pahan
-	real_rank = "Lieutenant"
+	access = list()
+	minimal_access = list()
+	outfit = /datum/outfit/job/bandit_leader
 
-/datum/job/bandit_barman
-	title = "Bandit Barman"
+// Bandit trader
+/datum/job/bandit_trader
+	title     = "Bandit Barman"
 	faction_s = "Bandits"
 	faction = "Station"
+
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = ""
 	selection_color = "#000000"
-	access = list()			//See /datum/job/assistant/get_access()
+	access = list()
 	minimal_access = list()
-	whitelist_only = 1
+	whitelist_only = 0
 	limit_per_player = 3
-	outfit = /datum/outfit/job/bandit_barman
+	outfit = /datum/outfit/job/bandit_trader
 
+/** Outfits **/
+
+// Bandit soldier
 /datum/outfit/job/bandit
 	name = "Bandit"
 	faction_s = "Bandits"
@@ -63,11 +72,11 @@
 	r_pocket = /obj/item/weapon/gun/projectile/automatic/pistol/pm
 	l_pocket = /obj/item/weapon/stalker/bolts
 
-/datum/outfit/job/bandit_pahan
+/datum/outfit/job/bandit_leader
 	name = "Pahan"
 	faction_s = "Bandits"
 
-/datum/outfit/job/bandit_pahan/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/bandit_leader/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kozhanka/banditka/coat
@@ -86,11 +95,11 @@
 	l_pocket = /obj/item/weapon/reagent_containers/food/snacks/stalker/konserva/shproti
 	r_pocket = /obj/item/weapon/gun/projectile/automatic/pistol/pm
 
-/datum/outfit/job/bandit_barman
+/datum/outfit/job/bandit_trader
 	name = "Bandit Barman"
 	faction_s = "Bandits"
 
-/datum/outfit/job/bandit_barman/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/bandit_trader/pre_equip(mob/living/carbon/human/H)
 	uniform = UNIFORMPICK
 	suit = /obj/item/clothing/suit/hooded/kozhanka/banditka
 	ears = null

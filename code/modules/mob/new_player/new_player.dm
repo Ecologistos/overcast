@@ -321,9 +321,11 @@
 			character.faction = list("monolith_forces")
 		else
 			character.faction = list("stalker_forces")
+
 	SSjob.EquipRank(character, rank, 1)					//equips the human
+
 	var/D = null
-	if(istype(jobnamelatejoin["JoinLate" + rank], /list))
+	if(istype(jobnamelatejoin["JoinLate" + rank], /list)) // Pick the spawn location
 		D = safepick(jobnamelatejoin["JoinLate" + rank])
 	else
 		D = safepick(latejoin)
