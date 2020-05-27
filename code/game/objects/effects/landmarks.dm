@@ -64,7 +64,8 @@
 			return
 
 	if(!istype(jobnamelatejoin[name], /list))
-		jobnamelatejoin[name] = new /list()
+		jobnamelatejoin[name] = list(loc)
+		qdel(src)
 	else
 		jobnamelatejoin[name] += loc
 		qdel(src)
@@ -267,7 +268,10 @@
 	name = "science_sec"
 
 
+/** Overcast Spawn Points **/
 
+// All landmark names must follow this convention: JoinLate + job.rank without the first space.
+// Example for Loner: JoinLateLoner, example for Old Stalker: JoinLateOld Stalker
 
 /obj/effect/landmark/latejoin
 	name = "JoinLate"
@@ -275,20 +279,38 @@
 /obj/effect/landmark/latejoin/everyone
 	name = "JoinLateEveryone"
 
-/obj/effect/landmark/latejoin/bandit
-	name = "JoinLateBandit"
-
-/obj/effect/landmark/latejoin/bandit_barman
-	name = "JoinLateBandit Barman"
-
-/obj/effect/landmark/latejoin/bandit_pahan
-	name = "JoinLatePahan"
-
+// Army
 /obj/effect/landmark/latejoin/army
 	name = "JoinLateArmy"
 
 /obj/effect/landmark/latejoin/army_eliteagro
 	name = "JoinLateEliteAgro"
+
+// Bandits
+/obj/effect/landmark/latejoin/bandit_soldier
+	name = "JoinLateBandit"
+
+/obj/effect/landmark/latejoin/bandit_leader
+	name = "JoinLateBandit Pahan"
+
+/obj/effect/landmark/latejoin/bandit_trader
+	name = "JoinLateBandit Barman"
+
+// Duty
+/obj/effect/landmark/latejoin/duty_soldier
+	name = "JoinLateDuty Soldier"
+
+/obj/effect/landmark/latejoin/duty_leader
+	name = "JoinLateDuty Major"
+
+// Freedom
+/obj/effect/landmark/latejoin/freedom_soldier
+	name = "JoinLateFreedom Soldier"
+
+/obj/effect/landmark/latejoin/freedom_leader
+	name = "JoinLateFreedom Chief Anarchist"
+
+// Unsorted
 
 /obj/effect/landmark/latejoin/petrovich
 	name = "JoinLatePetrovich"
@@ -302,23 +324,11 @@
 /obj/effect/landmark/latejoin/mercenary
 	name = "JoinLateMercenary"
 
-/obj/effect/landmark/latejoin/duty
-	name = "JoinLateDuty"
-
 /obj/effect/landmark/latejoin/barman2
 	name = "JoinLateBarman2"
 
-/obj/effect/landmark/latejoin/duty_lieutenant
-	name = "JoinLateDuty Lieutenant"
-
 /obj/effect/landmark/latejoin/mercenary_sql
 	name = "JoinLateMercenary Sql"
-
-/obj/effect/landmark/latejoin/freedom
-	name = "JoinLateFreedom"
-
-/obj/effect/landmark/latejoin/freedom_lieutenant
-	name = "JoinLateFreedom Lieutenant"
 
 /obj/effect/landmark/latejoin/monolith
 	name = "JoinLateMonolith"

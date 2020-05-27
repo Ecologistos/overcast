@@ -6,14 +6,14 @@
 
 /** Jobs **/
 
-// Bandit Soldier
+// Bandit soldier
 /datum/job/bandit_soldier
-	title = "Bandit"
+	title     = "Bandit"
 	faction_s = "Bandits"
-	faction = "Station"
+	faction   = "Station"
 	total_positions = 12
-	spawn_positions = 12
-	supervisors = "Pahan"
+	spawn_positions = 5
+	supervisors = "Bandit Pahan"
 	selection_color = "#000000"
 	access = list()
 	minimal_access = list()
@@ -21,9 +21,9 @@
 	limit_per_player = 2
 	outfit = /datum/outfit/job/bandit
 
-// Bandit Leader
+// Bandit leader
 /datum/job/bandit_leader
-	title = "Bandit Pahan"
+	title     = "Bandit Pahan"
 	faction_s = "Bandits"
 	faction = "Station"
 	whitelist_only = 0
@@ -34,19 +34,20 @@
 	access = list()
 	minimal_access = list()
 	outfit = /datum/outfit/job/bandit_leader
-	real_rank = "Lieutenant"
 
 // Bandit trader
 /datum/job/bandit_trader
-	title = "Bandit Barman"
+	title     = "Bandit Barman"
 	faction_s = "Bandits"
 	faction = "Station"
+
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = ""
 	selection_color = "#000000"
 	access = list()
 	minimal_access = list()
+	whitelist_only = 0
 	limit_per_player = 3
 	outfit = /datum/outfit/job/bandit_trader
 
