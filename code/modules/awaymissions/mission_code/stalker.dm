@@ -293,6 +293,27 @@
 	ambient_environment_cooldown = 800
 	environment = 8
 
+// Rostok
+/area/stalker/byadt
+	requires_power = 1
+
+/area/stalker/byadt/bar
+	name = "Bar"
+	icon_state = "realbar"
+	safezone = 1
+
+/area/stalker/byadt/buildings
+	name = "Buildings"
+	icon_state = "buildings_s"
+
+/area/stalker/blowout/byadt/buildings
+	name = "Buildings Blowout"
+	icon_state = "buildings"
+
+/area/stalker/byadt/buildings/mercenary
+	name = "Mercenary"
+	icon_state = "mercenary"
+
 
 /** Zaton (Backwater) **/
 
@@ -655,26 +676,3 @@
 /area/stalker/blowout/svalka/tunnel
 	name = "Tunnel"
 	icon_state = "tunnel"
-
-	///¡¿–, ﬂÕ“¿–‹, ƒ» ¿ﬂ “≈––»“Œ–»ﬂ///
-
-
-/area/stalker/byadt
-	requires_power = 1
-
-/area/stalker/byadt/bar
-	name = "Bar"
-	icon_state = "realbar"
-	safezone = 1
-
-/area/stalker/byadt/buildings
-	name = "Buildings"
-	icon_state = "buildings_s"
-
-/area/stalker/blowout/byadt/buildings
-	name = "Buildings Blowout"
-	icon_state = "buildings"
-
-/area/stalker/byadt/buildings/mercenary
-	name = "Mercenary"
-	icon_state = "mercenary"
