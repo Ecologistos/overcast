@@ -215,7 +215,7 @@
 
 // Agroprom
 /area/stalker/agroprom
-	// icon = 'icons/stalker/map/kordon/agroprom.dmi'
+	icon = 'icons/stalker/map/kordon/agroprom.dmi'
 	requires_power = 1
 
 /area/stalker/agroprom/buildings
@@ -293,26 +293,43 @@
 	ambient_environment_cooldown = 800
 	environment = 8
 
+/area/stalker/agroprom/abandoned_base
+	name = "Abandoned Military Base"
+	icon_state = "abandoned_military_base"
+
+/area/stalker/agroprom/warehouses
+	name = "Warehouses"
+	icon_state = "warehouses"
+
 // Rostok
-/area/stalker/byadt
+/area/stalker/rostok
+	icon = 'icons/stalker/map/kordon/rostok.dmi'
 	requires_power = 1
 
-/area/stalker/byadt/bar
+/area/stalker/rostok/bar
 	name = "Bar"
+	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "realbar"
 	safezone = 1
 
-/area/stalker/byadt/buildings
+/area/stalker/rostok/buildings
 	name = "Buildings"
+	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "buildings_s"
 
-/area/stalker/blowout/byadt/buildings
+/area/stalker/blowout/rostok/buildings
 	name = "Buildings Blowout"
+	icon = 'icons/stalker/areas_buildings_blowout.dmi'
 	icon_state = "buildings"
 
-/area/stalker/byadt/buildings/mercenary
+/area/stalker/rostok/buildings/mercenary
 	name = "Mercenary"
+	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "mercenary"
+
+/area/stalker/rostok/headquarters
+	name = "Headquarters"
+	icon_state = "headquarters"
 
 
 /** Zaton (Backwater) **/
