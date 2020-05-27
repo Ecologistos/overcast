@@ -340,7 +340,7 @@
 "gB" = (/obj/structure/barricade/stalker/box,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "gC" = (/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "gD" = (/obj/structure/stalker/cacheable/pech{pixel_y = 27},/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
-"gE" = (/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"; icon_state = "bulb1"; dir = 1},/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
+"gE" = (/obj/machinery/light/small{tag = "icon-bulb1 (NORTH)"; icon_state = "bulb1"; dir = 1},/obj/effect/landmark/latejoin/bandit_leader,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "gF" = (/obj/structure/bed/chair/brevno,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "gG" = (/obj/structure/bed/chair/brevno/log2,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "gH" = (/obj/structure/stalker/cacheable/bochka,/turf/stalker/floor/wood/oldgor,/area/stalker/blowout/kordon/buildings)
