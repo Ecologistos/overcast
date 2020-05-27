@@ -962,6 +962,13 @@
 				M.do_cpr(H)
 
 		if("grab")
+			var/area/current_location = get_area(H.loc)
+			if(current_location.safezone)
+				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
+					M << "<span class='warning'>You can't fight in the safezone!</span>"
+				else
+					M << "<span class='warning'>Ты захватом-то не свети, дзюдоист.</span>"
+				return 0
 			if(attacker_style && attacker_style.grab_act(M,H))
 				return 1
 			else
@@ -969,6 +976,14 @@
 				return 1
 
 		if("harm")
+			var/area/current_location = get_area(H.loc)
+			if(current_location.safezone)
+				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
+					M << "<span class='warning'>You can't fight in the safezone!</span>"
+				else
+					M << "<span class='warning'>Кулаками иди выйди помаши за дверь.</span>"
+				return 0
+
 			if(attacker_style && attacker_style.harm_act(M,H))
 				return 1
 			else
@@ -1006,6 +1021,13 @@
 					H.forcesay(hit_appends)
 				*/
 		if("disarm")
+		var/area/B = get_area(H.loc)
+			if(B.safezone)
+				if(M.client && (M.client.prefs.chat_toggles & CHAT_LANGUAGE))
+					M << "<span class='warning'>You can't fight in the safezone!</span>"
+				else
+					M << "<span class='warning'>Толкать говно из жопы будешь, и то, не здесь.</span>"
+				return 0
 			if(attacker_style && attacker_style.disarm_act(M,H))
 				return 1
 			else
