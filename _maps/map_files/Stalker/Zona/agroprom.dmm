@@ -254,7 +254,7 @@
 "fj" = (/obj/structure/stalker/cacheable/musor_yashik/green/full,/turf/stalker/floor/digable/grass,/area/stalker/blowout/outdoor)
 "fk" = (/obj/structure/closet/crate/stalker/blue/stash/low,/turf/stalker/floor/plasteel/plitochka,/area/stalker/buildings/safezone)
 "fm" = (/obj/structure/table/stalker/wood,/obj/structure/table/stalker/wood,/obj/structure/stalker/cacheable/televizor/broken,/obj/machinery/light/small,/turf/stalker/floor/plasteel/plitochka,/area/stalker/buildings/safezone)
-"fn" = (/obj/effect/landmark/latejoin/freedom,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
+"fn" = (/obj/effect/landmark/latejoin/freedom_soldier,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "fo" = (/obj/structure/table/stalker/wood,/turf/stalker/floor/plasteel/plitochka,/area/stalker/buildings/safezone)
 "fp" = (/obj/structure/stalker/cacheable/bochka,/turf/stalker/floor/gryaz,/area/stalker/buildings/safezone)
 "fq" = (/turf/stalker/floor/road{tag = "icon-road1"; icon_state = "road1"},/area/stalker/blowout/outdoor)
