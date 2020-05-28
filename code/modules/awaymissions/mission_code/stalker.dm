@@ -308,14 +308,13 @@
 
 /area/stalker/rostok/bar
 	name = "Bar"
-	icon = 'icons/stalker/areas_buildings.dmi'
-	icon_state = "realbar"
+	icon_state = "bar"
 	safezone = 1
 
 /area/stalker/rostok/buildings
 	name = "Buildings"
 	icon = 'icons/stalker/areas_buildings.dmi'
-	icon_state = "buildings_s"
+	icon_state = "buildings"
 
 /area/stalker/blowout/rostok/buildings
 	name = "Buildings Blowout"
