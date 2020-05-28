@@ -5,7 +5,7 @@
 	icon_state = "doorctrl"
 	normaldoorcontrol = 0
 	specialfunctions = OPEN // Bitflag, see assembly file
-	var/keypadhtml = ""
+	var/keypadHtml = ""
 	var/correctcode = "909"
 	var/keycode = "908"
 
@@ -14,7 +14,7 @@
 
 /obj/machinery/button/door/keypad/proc/AddButtons()
 	if(correctcode == keycode)
-		keypadhtml += "<p><a href='byond://?src=\ref[src];choice=setup'>\[ Change \]</a>	\
+		keypadHtml += "<p><a href='byond://?src=\ref[src];choice=setup'>\[ Change \]</a>	\
 		<a href='byond://?src=\ref[src];choice=pulse'>\[ Use \]</a></p>"
 		playsound(loc, 'sound/machines/defib_success.ogg', 30, 1)
 
@@ -22,39 +22,46 @@
 	return
 
 /obj/machinery/button/door/keypad/proc/ShowKeypad(var/mob/living/U)
-	keypadhtml = "<html>\
-	<body><br>"
+	keypadHtml = "<html><body><br>"
+
 	if(keycode == "")
-		keypadhtml += "<div align=center><table border=0><tr><td>\[ <b>¬ведите пароль</b> \]</td></tr></table><hr color=FF9900>"
+		keypadHtml += "<div align=center><table border=0><tr><td>\[Enter the code\]</td></tr></table><hr color=FF9900>"
 	else
-		keypadhtml += "<div align=center><table border=0><tr><td>[keycode]</td></tr></table><hr color=FF9900>\
+		keypadHtml += "<div align=center><table border=0><tr><td>[keycode]</td></tr></table><hr color=FF9900>\
 	<form>"
 
 	AddButtons()
 
-	keypadhtml += "<p><a href='byond://?src=\ref[src];choice=1'>1</a>	\
-	<a href='byond://?src=\ref[src];choice=2'>2</a>	\
-	<a href='byond://?src=\ref[src];choice=3'>3</a></p>	\
-	<p><a href='byond://?src=\ref[src];choice=4'>4</a>	\
-	<a href='byond://?src=\ref[src];choice=5'>5</a>	\
-	<a href='byond://?src=\ref[src];choice=6'>6</a></p>	\
-	<p><a href='byond://?src=\ref[src];choice=7'>7</a>	\
-	<a href='byond://?src=\ref[src];choice=8'>8</<a href>	\
-	<a href='byond://?src=\ref[src];choice=9'>9</a></p>	\
-	<p><a href='byond://?src=\ref[src];choice=C'>C</a>	\
-	<a href='byond://?src=\ref[src];choice=0'>0</a>	\
-	<a href='byond://?src=\ref[src];choice=R'>R</a></p>	\
-	</form>\
-	</div>\
-	</body>\
-	\
-	</html>"
+	keypadHtml += "\
+		<p>\
+			<a href='byond://?src=\ref[src];choice=1'>1</a>	\
+			<a href='byond://?src=\ref[src];choice=2'>2</a>	\
+			<a href='byond://?src=\ref[src];choice=3'>3</a> \
+		</p>\
+		<p>\
+			<a href='byond://?src=\ref[src];choice=4'>4</a>	\
+			<a href='byond://?src=\ref[src];choice=5'>5</a> \
+			<a href='byond://?src=\ref[src];choice=6'>6</a> \
+		</p>\
+		<p>\
+			<a href='byond://?src=\ref[src];choice=7'>7</a>	\
+			<a href='byond://?src=\ref[src];choice=8'>8</a>	\
+			<a href='byond://?src=\ref[src];choice=9'>9</a> \
+		</p>\
+		<p>\
+			<a href='byond://?src=\ref[src];choice=C'>C</a>\
+			<a href='byond://?src=\ref[src];choice=0'>0</a>\
+			<a href='byond://?src=\ref[src];choice=R'>R</a>\
+		</p>"
 
-//	user << browse(keypadhtml, "window=keypadhtml;size=118x200;border=1;can_resize=1;can_close=1;can_minimize=1;titlebar=1")
-	var/datum/browser/keypad = new(U, "keypadhtml", "Keypad v0.34", 180, 305)
-	keypad.set_content(keypadhtml)
+	keypadHtml += "</form></div></body></html>"
+
+//	user << browse(keypadHtml, "window=keypadhtml;size=118x200;border=1;can_resize=1;can_close=1;can_minimize=1;titlebar=1")
+	var/datum/browser/keypad = new(U, "keypadHtml", "Keypad v0.34", 180, 305)
+	keypad.set_content(keypadHtml)
 	keypad.set_title_image(U.browse_rsc_icon(src.icon, src.icon_state))
 	keypad.open()
+
 	return
 
 /obj/machinery/button/door/keypad/attack_hand(mob/user)
@@ -79,7 +86,7 @@
 	return
 
 /obj/machinery/button/door/keypad/proc/UpdateKeypad(var/mob/living/U)
-//	U << browse(null, "window=keypadhtml")
+//	U << browse(null, "window=keypadHtml")
 	ShowKeypad(U)
 	return
 
@@ -125,23 +132,21 @@
 			keycode = "[keycode]" + "9"
 
 		if("C")
-			U << "<b>	Nothing happens.</b>"
+			keycode = ""
+			U << "<b>You have cleared the entered digits.</b>"
 
 		if("0")
 			keycode = "[keycode]" + "0"
 
 		if("R")
-			keycode = ""
+			if(keycode == correctcode)
+				if(device)
+					device.pulsed()
 
 		if("setup")
 			if(keycode == correctcode)
 				if(device)
 					ChangeCode()
-
-		if("pulse")
-			if(keycode == correctcode)
-				if(device)
-					device.pulsed()
 
 	UpdateKeypad(usr)
 
