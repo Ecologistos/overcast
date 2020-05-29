@@ -3,39 +3,43 @@
 
 /obj/item/weapon/stalker/loot/dog_tail
 	name = "dog tail"
-	desc = "Устойчивость кожи мутировавших собак к химическому и электрическому воздействию давно обратила на себ&#255; внимание учёных. Из-за отсутстви&#255; жировых отложений хвосты собак наиболее подход&#255;т дл&#255; лабораторных исследований"
+	desc = "РЈСЃС‚РѕР№С‡РёРІРѕСЃС‚СЊ РєРѕР¶Рё РјСѓС‚РёСЂРѕРІР°РІС€РёС… СЃРѕР±Р°Рє Рє СЌР»РµРєС‚СЂРёС‡РµСЃС‚РІСѓ Рё С…РёРјРёС‡РµСЃРєРёРј Р°РіРµРЅС‚Р°Рј РґРѕР»РіРѕРµ РІСЂРµРјСЏ Р±С‹Р»Р° РїСЂРµРґРјРµС‚РѕРј РЅР°СѓС‡РЅРѕРіРѕ РІРЅРёРјР°РЅРёСЏ. РџРѕСЃРєРѕР»СЊРєСѓ С…РІРѕСЃС‚ Р¶РёРІРѕС‚РЅРѕРіРѕ РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµ СЃРѕРґРµСЂР¶РёС‚ Р¶РёСЂРѕРІРѕР№ С‚РєР°РЅРё, РѕРЅ РѕСЃРѕР±РµРЅРЅРѕ РїРѕРґС…РѕРґРёС‚ РґР»СЏ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅС‹С… РёСЃСЃР»РµРґРѕРІР°РЅРёР№."
 	eng_desc = "The resistance of mutant dogs' skin to electricity and chemical agents has long been the subject of scientific attention. Since the animal's tail is almost completely free of fat tissue, it is especially suited for lab experimentation."
 	icon_state = "pes"
 
 /obj/item/weapon/stalker/loot/flesh_eye
 	name = "flesh eye"
-	desc = "После мутаций увеличенный глаз Плоти приобрёл р&#255;д свойств, самым полезным из которых &#255;вл&#255;етс&#255; способность к регенерации хрусталика. Детали этого механизма точно не известны, но это открытие обещает революцию в медицине. Вы можете внести свой вклад в науку, продав глаз плоти учёным дл&#255; исследований."
+	desc = "РћРїСѓС…С€РёР№ РјСѓС‚РёСЂРѕРІР°РІС€РёР№ РіР»Р°Р· РїР»РѕС‚Рё РїСЂРёРѕР±СЂРµР» СЂСЏРґ СЃС‚СЂР°РЅРЅС‹С… С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє, РЅР°РёР±РѕР»РµРµ РїРѕР»РµР·РЅРѕР№ РёР· РєРѕС‚РѕСЂС‹С… СЏРІР»СЏРµС‚СЃСЏ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ СЂРµРіРµРЅРµСЂРёСЂРѕРІР°С‚СЊ С…СЂСѓСЃС‚Р°Р»РёРє. РЎРїРµС†РёС„РёРєР° СЌС‚РѕРіРѕ РїСЂРѕС†РµСЃСЃР° РЅРµРёР·РІРµСЃС‚РЅР°, С…РѕС‚СЏ С‚Р°РєРѕРµ РѕС‚РєСЂС‹С‚РёРµ, РЅРµСЃРѕРјРЅРµРЅРЅРѕ, РїСЂРѕРёР·РІРµР»Рѕ Р±С‹ СЂРµРІРѕР»СЋС†РёСЋ РІ СЃРѕРІСЂРµРјРµРЅРЅРѕР№ РјРµРґРёС†РёРЅРµ. Р’С‹ РјРѕР¶РµС‚Рµ СЃС‹РіСЂР°С‚СЊ СЃРІРѕСЋ СЂРѕР»СЊ РІ СЂР°Р·РІРёС‚РёРё РЅР°СѓРєРё, РїСЂРѕРґР°РІР°СЏ РїР»РѕС‚СЃРєРёРµ РіР»Р°Р·Р° СѓС‡РµРЅС‹Рј РґР»СЏ РёС… СЌРєСЃРїРµСЂРёРјРµРЅС‚РѕРІ."
 	eng_desc = "The mutated, swollen eye of the Flesh acquired a number of strange characteristics, the most useful of which is the ability to regenerate the lens. The specifics of the process are unknown, although such discovery would most certainly revolutionize modern medicine. You can play your part in scientific development by selling Flesh eyes to scientists for their experiments."
 	icon_state = "plot"
 
 /obj/item/weapon/stalker/loot/boar_leg
 	name = "boar's hoof"
-	desc = "Копыто кабана используетс&#255; учёными дл&#255; изготовлени&#255; р&#255;да лекарств, самым распространённым из которых &#255;вл&#255;етс&#255; противорадиационна&#255; сыворотка."
+	desc = "РљРѕРїС‹С‚Рѕ РєР°Р±Р°РЅР° РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ СѓС‡РµРЅС‹РјРё РґР»СЏ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ РЅРµРєРѕС‚РѕСЂС‹С… Р»РµРєР°СЂСЃС‚РІ, РЅР°РёР±РѕР»РµРµ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРЅС‹РјРё РёР· РєРѕС‚РѕСЂС‹С… СЏРІР»СЏСЋС‚СЃСЏ РїСЂРѕС‚РёРІРѕСЂР°РґРёР°С†РёРѕРЅРЅС‹Рµ РїСЂРµРїР°СЂР°С‚С‹."
 	eng_desc = "The hoof of a wild boar is used by scientists for manufacturing of some medicines, the most widespread of which are anti radiation drugs."
 	icon_state = "kaban"
 
 /obj/item/weapon/stalker/loot/snork_leg
 	name = "snork leg"
-	desc = "The resistance of mutant dogs' skin to electricity and chemical agents has long been the subject of scientific attention. Since the animal's tail is almost completely free of fat tissue, it is especially suited for lab experimentation."
+	desc = "РќРѕРіРё СЃРЅРѕСЂРєР° СЃРѕРґРµСЂР¶Р°С‚ РѕРіСЂРѕРјРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РІС‹СЃРѕРєРѕСЌР»Р°СЃС‚РёС‡РЅС‹С… СЃСѓС…РѕР¶РёР»РёР№. Р­С‚Рѕ РѕР±СЉСЏСЃРЅСЏРµС‚ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ Р·РІРµСЂСЏ СЃРѕРІРµСЂС€Р°С‚СЊ РЅРµРІРµСЂРѕСЏС‚РЅРѕ РґР»РёРЅРЅС‹Рµ РїСЂС‹Р¶РєРё."
 	eng_desc = "Snork feet contain a huge number of highly elastic tendons. This explains the beast's ability to make those unbelievably long jumps."
 	icon_state = "snork_leg"
 
 /obj/item/weapon/stalker/loot/pseudo_tail
 	name = "pseudo-dog tail"
-	desc = "Устойчивость кожи мутировавших собак к химическому и электрическому воздействию давно обратила на себ&#255; внимание учёных. Из-за отсутстви&#255; жировых отложений хвосты собак наиболее подход&#255;т дл&#255; лабораторных исследований."
+	desc = "РЈСЃС‚РѕР№С‡РёРІРѕСЃС‚СЊ РєРѕР¶Рё РїСЃРµРІРґРѕСЃРѕР±Р°Рє Рє СЌР»РµРєС‚СЂРёС‡РµСЃС‚РІСѓ Рё С…РёРјРёС‡РµСЃРєРёРј Р°РіРµРЅС‚Р°Рј РґРѕР»РіРѕРµ РІСЂРµРјСЏ Р±С‹Р»Р° РїСЂРµРґРјРµС‚РѕРј РЅР°СѓС‡РЅРѕРіРѕ РІРЅРёРјР°РЅРёСЏ. РџРѕСЃРєРѕР»СЊРєСѓ С…РІРѕСЃС‚ Р¶РёРІРѕС‚РЅРѕРіРѕ РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµ СЃРѕРґРµСЂР¶РёС‚ Р¶РёСЂРѕРІРѕР№ С‚РєР°РЅРё, РѕРЅ РѕСЃРѕР±РµРЅРЅРѕ РїРѕРґС…РѕРґРёС‚ РґР»СЏ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅС‹С… РёСЃСЃР»РµРґРѕРІР°РЅРёР№."
+	eng_desc = "The resistance of mutant dogs' skin to electricity and chemical agents has long been the subject of scientific attention. Since the animal's tail is almost completely free of fat tissue, it is especially suited for lab examination."
 	icon_state = "psevdopes"
 
 /obj/item/weapon/stalker/loot/bloodsucker
 	name = "bloodsucker tentacles"
-	desc = "Щупальца Кровососа содержат особую железу: она выдел&#255;ет фермент, раствор&#255;ющий кожу жертвы, и одновременно преп&#255;тствующий сворачиванию крови. Если учёным удастьс&#255; определить структуру фермента, то это поможет осуществить прорыв в медицине."
+	desc = "Р©СѓРїР°Р»СЊС†Р° РєСЂРѕРІРѕСЃРѕСЃР° СЃРѕРґРµСЂР¶Р°С‚ СЃРїРµС†РёР°Р»СЊРЅСѓСЋ Р¶РµР»РµР·Сѓ, РїСЂРѕРёР·РІРѕРґСЏС‰СѓСЋ С„РµСЂРјРµРЅС‚, СЃРїРѕСЃРѕР±РЅС‹Р№ СЂР°СЃС‚РІРѕСЂСЏС‚СЊ РєРѕР¶Сѓ Рё РѕРґРЅРѕРІСЂРµРјРµРЅРЅРѕ РїСЂРµРґРѕС‚РІСЂР°С‰Р°СЋС‰РёР№ СЃРІРµСЂС‚С‹РІР°РЅРёРµ РєСЂРѕРІРё. РћС‚РєСЂС‹С‚РёРµ СЃРѕСЃС‚Р°РІР° С„РµСЂРјРµРЅС‚Р° РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ РєСЂР°РµСѓРіРѕР»СЊРЅС‹Рј РєР°РјРЅРµРј С†РµР»РѕРіРѕ СЂСЏРґР° РІРµР»РёРєРёС… РјРµРґРёС†РёРЅСЃРєРёС… РґРѕСЃС‚РёР¶РµРЅРёР№."
+	eng_desc = "Bloodsucker tentacles contain a special gland producing a ferment capable of dissolving the skin and simultaneously preventing blood from clotting. Discovering the ferment's composition could be the cornerstone of a whole series of great medical advances."
 	icon_state = "bloodsucker"
 
 
 /obj/item/weapon/stalker/loot/controller_brain
 	name = "controller brain"
+	desc = "РњРѕР·Рі РєРѕРЅС‚СЂРѕР»Р»РµСЂР° РїРѕС…РѕР¶ РЅР° РјРѕР·Рі С‡РµР»РѕРІРµРєР°, Р·Р° РёСЃРєР»СЋС‡РµРЅРёРµРј С‚РѕРіРѕ, С‡С‚Рѕ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рµ РѕР±Р»Р°СЃС‚Рё Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ РѕРїСѓС…Р»Рё РёР»Рё СЂР°СЃС€РёСЂРµРЅС‹ РїРѕ СЃСЂР°РІРЅРµРЅРёСЋ СЃ РЅРѕСЂРјР°Р»СЊРЅС‹Рј. РџРѕРґРѕР±РЅС‹Р№ РѕР±СЂР°Р·РµС†, РЅРµСЃРѕРјРЅРµРЅРЅРѕ, РјРѕР¶РµС‚ РґР°С‚СЊ СѓС‡РµРЅС‹Рј С†РµРЅРЅСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ С‚РѕРј, РєР°Рє РѕРЅ РїРѕР»СѓС‡РёР» Рё РёСЃРїРѕР»СЊР·СѓРµС‚ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё."
+	eng_desc = "The Brain of a Controller resembles that of a human with the exclusion of certain areas being signficantly swollen or expanded than that of normal. A specimen such as this could surely provide valuable insight to scientists regarding how it obtained and uses its abilities."
 	icon_state = "controller_brain"
