@@ -51,7 +51,7 @@ var/list/global_sidormat_list = list(
 		new /datum/data/stalker_equipment("SPAS-12",			"SPAS-12",			/obj/item/weapon/gun/projectile/shotgun/spsa,					75000,	VETERAN)
 	),
 
-	// Single-shot rifles
+	// Single-shot Rifles
 	"Rifles" = list(
 		new /datum/data/stalker_equipment("Lee Enfield",		"Lee Enfield",		/obj/item/weapon/gun/projectile/shotgun/boltaction/enfield,		15000,	ROOKIE),
 		new /datum/data/stalker_equipment("VSS Vintorez", 		"ВСС \"Винторез\"",	/obj/item/weapon/gun/projectile/automatic/vintorez,				60000,	EXPERT)
@@ -67,45 +67,45 @@ var/list/global_sidormat_list = list(
 
 	// Ammo Boxes
 	"Ammo Boxes" = list(
-		new /datum/data/stalker_equipment("9x18mm Box",				"Коробка патронов 9x18мм",					/obj/item/ammo_box/stalker/b9x18,						1500,	ROOKIE),
-		new /datum/data/stalker_equipment("9x18mm AP Box",			"Êîðîáêà 9x18ìì Áðîíåáîéíûå",				/obj/item/ammo_box/stalker/b9x18P,						2500,	EXPERIENCED),
-		new /datum/data/stalker_equipment("7.62x25mm Box",			"Êîðîáêà 7.62x25ìì",						/obj/item/ammo_box/stalker/b762x25,						1500,	ROOKIE),
-		new /datum/data/stalker_equipment("9x19mm Box",				"Êîðîáêà 9x19ìì",							/obj/item/ammo_box/stalker/b9x19,						2500,	ROOKIE),
-		new /datum/data/stalker_equipment("9x19mm AP Box",			"Êîðîáêà 9x19ìì Áðîíåáîéíûå",				/obj/item/ammo_box/stalker/b9x19P,						3750,	EXPERIENCED),
-		new /datum/data/stalker_equipment(".45 ACP Box",			"Êîðîáêà .45 ACP",							/obj/item/ammo_box/stalker/bacp45,						5000,	ROOKIE),
-		new /datum/data/stalker_equipment(".45 ACP Hydroshock Box",	"Êîðîáêà .45 ACP Hydroshock",				/obj/item/ammo_box/stalker/bacp45ap,					7500,	EXPERIENCED),
-		new /datum/data/stalker_equipment(".44 Magnum Box",			"Êîðîáêà .44 Ìàãíóì",						/obj/item/ammo_box/stalker/bmag44,						7000,	EXPERIENCED),
-		new /datum/data/stalker_equipment(".44 Magnum FMJ Box",		"Êîðîáêà .44 Ìàãíóì Öåëüíîìåò. îáîëî÷êà",	/obj/item/ammo_box/stalker/bmag44fmj,					10000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("12x70 Buckshot Box",		"Êîðîáêà äðîáè 12x70",						/obj/item/ammo_box/stalker/b12x70,						3000,	ROOKIE),
-		new /datum/data/stalker_equipment("12x70 Slug Box",			"Êîðîáêà äðîáè 12x70 Áðîíåáîéíûå",			/obj/item/ammo_box/stalker/b12x70P,						4500,	EXPERIENCED),
-		new /datum/data/stalker_equipment("12x70 Dart Box",			"Êîðîáêà 12x70 Äðîòèê",						/obj/item/ammo_box/stalker/b12x70D,						6000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("5.45x39mm Box",			"Êîðîáêà 5.45õ39ìì",						/obj/item/ammo_box/stalker/b545,						8000,	ROOKIE),
-		new /datum/data/stalker_equipment("5.45x39mm AP Box",		"Êîðîáêà 5.45õ39ìì Áðîíåáîéíûå",			/obj/item/ammo_box/stalker/b545ap,						12000,	VETERAN),
-		new /datum/data/stalker_equipment("5.56x45mm Box",			"Êîðîáêà 5.56x45ìì",						/obj/item/ammo_box/stalker/b55645,						10000,	ROOKIE),
-		new /datum/data/stalker_equipment("5.56x45mm AP Box",		"Êîðîáêà 5.56x45ìì Áðîíåáîéíûå",			/obj/item/ammo_box/stalker/b55645ap,					15000,	VETERAN),
-		new /datum/data/stalker_equipment("7.62x51 Box",			"Êîðîáêà 7.62õ51",							/obj/item/ammo_box/stalker/b762x51,						8000,	ROOKIE),
-		new /datum/data/stalker_equipment("9x39 PAB-9 Box",			"Êîðîáêà 9x39ìì ÏÀÁ-9",						/obj/item/ammo_box/stalker/b939,						10000,	EXPERIENCED)
+		new /datum/data/stalker_equipment("9x18mm Ammo Box",				"Коробка патронов 9x18мм",							/obj/item/ammo_box/stalker/b9x18,			1500,	ROOKIE),
+		new /datum/data/stalker_equipment("9x18mm AP Ammo Box",				"Коробка патронов (ББ) 9x18мм",						/obj/item/ammo_box/stalker/b9x18P,			2500,	EXPERIENCED),
+		new /datum/data/stalker_equipment("7.62x25mm Ammo Box",				"Коробка патронов 7.62x25мм",						/obj/item/ammo_box/stalker/b762x25,			1500,	ROOKIE),
+		new /datum/data/stalker_equipment("9x19mm Ammo Box",				"Коробка патронов 9x19ìì",							/obj/item/ammo_box/stalker/b9x19,			2500,	ROOKIE),
+		new /datum/data/stalker_equipment("9x19mm AP Ammo Box",				"Коробка патронов 9x19ìì Áðîíåáîéíûå",				/obj/item/ammo_box/stalker/b9x19P,			3750,	EXPERIENCED),
+		new /datum/data/stalker_equipment(".45 ACP Ammo Box",				"Коробка патронов .45 ACP",							/obj/item/ammo_box/stalker/bacp45,			5000,	ROOKIE),
+		new /datum/data/stalker_equipment(".45 ACP Hydroshock Ammo Box",	"Коробка патронов .45 ACP Hydroshock",				/obj/item/ammo_box/stalker/bacp45ap,		7500,	EXPERIENCED),
+		new /datum/data/stalker_equipment(".44 Magnum Ammo Box",			"Коробка патронов .44 Ìàãíóì",						/obj/item/ammo_box/stalker/bmag44,			7000,	EXPERIENCED),
+		new /datum/data/stalker_equipment(".44 Magnum Ammo FMJ Box",		"Коробка патронов .44 Ìàãíóì Öåëüíîìåò. îáîëî÷êà",	/obj/item/ammo_box/stalker/bmag44fmj,		10000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("12x70 Buckshot Ammo Box",		"Коробка патронов (дробь) 12x70мм",					/obj/item/ammo_box/stalker/b12x70,			3000,	ROOKIE),
+		new /datum/data/stalker_equipment("12x70 Slug Ammo Box",			"Коробка патронов (жакан) 12x70мм",					/obj/item/ammo_box/stalker/b12x70P,			4500,	EXPERIENCED),
+		new /datum/data/stalker_equipment("12x70 Dart Ammo Box",			"Коробка патронов (дротик) 12x70мм",				/obj/item/ammo_box/stalker/b12x70D,			6000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("5.45x39mm Ammo Box",				"Коробка патронов 5.45õ39мм",						/obj/item/ammo_box/stalker/b545,			8000,	ROOKIE),
+		new /datum/data/stalker_equipment("5.45x39mm Ammo AP Box",			"Коробка патронов 5.45õ39мм Áðîíåáîéíûå",			/obj/item/ammo_box/stalker/b545ap,			12000,	VETERAN),
+		new /datum/data/stalker_equipment("5.56x45mm Ammo Box",				"Коробка патронов 5.56x45мм",						/obj/item/ammo_box/stalker/b55645,			10000,	ROOKIE),
+		new /datum/data/stalker_equipment("5.56x45mm Ammo AP Box",			"Коробка патронов 5.56x45мм Áðîíåáîéíûå",			/obj/item/ammo_box/stalker/b55645ap,		15000,	VETERAN),
+		new /datum/data/stalker_equipment("7.62x51 Ammo Box",				"Коробка патронов 7.62x51",							/obj/item/ammo_box/stalker/b762x51,			8000,	ROOKIE),
+		new /datum/data/stalker_equipment("9x39mm PAB-9 Ammo Box",			"Коробка патронов 9x39ìì ÏÀÁ-9",					/obj/item/ammo_box/stalker/b939,			10000,	EXPERIENCED)
 	),
 
 	"Ammo Magazines and Clips" = list(
-		new /datum/data/stalker_equipment("PMm; PB1s Magazine",						"Ìàãàçèí ê ÏÌì; ÏÁ1ñ",			/obj/item/ammo_box/magazine/stalker/m9x18pm,			700,	ROOKIE),
-		new /datum/data/stalker_equipment("TT Magazine",							"Ìàãàçèí ê ÒÒ",					/obj/item/ammo_box/magazine/stalker/tt,					600,	ROOKIE),
-		new /datum/data/stalker_equipment("Fort-12 Magazine",						"Ìàãàçèí ê Ôîðò-12",			/obj/item/ammo_box/magazine/stalker/m9x18fort,			1000,	ROOKIE),
-		new /datum/data/stalker_equipment("Kiparis Magazine",						"Ìàãàçèí ê Êèïàðèñó",			/obj/item/ammo_box/magazine/stalker/kiparis,			1400,	ROOKIE),
-		new /datum/data/stalker_equipment("MP-5 Magazine",							"Ìàãàçèí ê ÌÏ-5",				/obj/item/ammo_box/magazine/stalker/m9x19mp5,			2000,	ROOKIE),
-		new /datum/data/stalker_equipment("PPSh Drum",								"Ìàãàçèí ê ÏÏØ",				/obj/item/ammo_box/magazine/stalker/ppsh,				5000,	ROOKIE),
-		new /datum/data/stalker_equipment("5.45x39mm Magazine",						"Ìàãàçèí 5.45x39ìì",			/obj/item/ammo_box/magazine/stalker/m545,				2250,	ROOKIE),
-		new /datum/data/stalker_equipment("5.56x45mm Magazine",						"Ìàãàçèí 5.56x45ìì",			/obj/item/ammo_box/magazine/stalker/m556x45,			3500,	ROOKIE),
-		new /datum/data/stalker_equipment("AS \"Val\" Magazine",					"Ìàãàçèí ê ÀÑ \"Âàë\"",			/obj/item/ammo_box/magazine/stalker/sp9x39val,			3000,	VETERAN),
-		new /datum/data/stalker_equipment("Tunder S14 Magazine",					"Ìàãàçèí ê ÎÖ-14 Ãðîçà",		/obj/item/ammo_box/magazine/stalker/sp9x39groza,		3500,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Vintorez Magazine",						"Ìàãàçèí ê Âèíòîðåçó",			/obj/item/ammo_box/magazine/stalker/sp9x39vint,			3000,	VETERAN),
-		new /datum/data/stalker_equipment("Colt M1911; SIG-Sauer P220 Magazine",	"Ìàãàçèí ê Êîëüòó; Ï-220",		/obj/item/ammo_box/magazine/stalker/sc45,				1400,	ROOKIE),
-		new /datum/data/stalker_equipment("Beretta 92FS Magazine",					"Ìàãàçèí ê Áåðåòòå 92ÔÑ",		/obj/item/ammo_box/magazine/stalker/m9x19marta,			1500,	ROOKIE),
-		new /datum/data/stalker_equipment("Beretta M38 Magazine",					"Ìàãàçèí ê Áåðåòòå Ì38",		/obj/item/ammo_box/magazine/stalker/berettam38,			1250,	ROOKIE),
-		new /datum/data/stalker_equipment("USP-match Magazine",						"Ìàãàçèí ê ÞÑÏ-Ìàò÷",			/obj/item/ammo_box/magazine/stalker/usp45,				2500,	ROOKIE),
-		new /datum/data/stalker_equipment("Desert Eagle Magazine",					"Ìàãàçèí ê Desert Eagle",		/obj/item/ammo_box/magazine/stalker/desert,				2000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("PKM ammo belt box",						"Æåñòÿíêà ñ ëåíòîé ê ÏÊÌ",		/obj/item/ammo_box/magazine/stalker/pkm,				20000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("7.62x51 Clip",							"Îáîéìà 7.62õ51",				/obj/item/ammo_box/stalker/cl762x51,					800,	ROOKIE)
+		new /datum/data/stalker_equipment("PMM/PB1-s 9x18mm Magazine",				"9x18мм магазин для ПММ/ПБ-1с",			/obj/item/ammo_box/magazine/stalker/m9x18pm,			700,	ROOKIE),
+		new /datum/data/stalker_equipment("TT Magazine",							"7.62x25мм Магазин для ТТ",				/obj/item/ammo_box/magazine/stalker/tt,					600,	ROOKIE),
+		new /datum/data/stalker_equipment("Fort-12 Magazine",						"9x18мм магазин для Форт-12",			/obj/item/ammo_box/magazine/stalker/m9x18fort_u,		1000,	ROOKIE),
+		new /datum/data/stalker_equipment("Kiparis Magazine",						"Ìàãàçèí ê Êèïàðèñó",					/obj/item/ammo_box/magazine/stalker/kiparis,			1400,	ROOKIE),
+		new /datum/data/stalker_equipment("MP-5 Magazine",							"9x19мм магазин для MP-5",				/obj/item/ammo_box/magazine/stalker/m9x19mp5,			2000,	ROOKIE),
+		new /datum/data/stalker_equipment("PPSh Drum",								"Ìàãàçèí ê ÏÏØ",						/obj/item/ammo_box/magazine/stalker/ppsh,				5000,	ROOKIE),
+		new /datum/data/stalker_equipment("5.45x39mm Magazine",						"Ìàãàçèí 5.45x39мм",					/obj/item/ammo_box/magazine/stalker/m545,				2250,	ROOKIE),
+		new /datum/data/stalker_equipment("5.56x45mm Magazine",						"Ìàãàçèí 5.56x45мм",					/obj/item/ammo_box/magazine/stalker/m556x45,			3500,	ROOKIE),
+		new /datum/data/stalker_equipment("AS \"Val\" Magazine",					"9х39мм магазин для АС \"Вал\"",		/obj/item/ammo_box/magazine/stalker/sp9x39val,			3000,	VETERAN),
+		new /datum/data/stalker_equipment("OTS-14 \"Thunder\" Magazine",			"9x39мм магазин для ОТ-14 \"Гроза\"",	/obj/item/ammo_box/magazine/stalker/sp9x39groza,		3500,	EXPERIENCED),
+		new /datum/data/stalker_equipment("VSS \"Vintorez\" Magazine",				"Ìàãàçèí ê Âèíòîðåçó",					/obj/item/ammo_box/magazine/stalker/sp9x39vint,			3000,	VETERAN),
+		new /datum/data/stalker_equipment("Colt M1911; SIG-Sauer P220 Magazine",	"Ìàãàçèí ê Êîëüòó; P220",				/obj/item/ammo_box/magazine/stalker/sc45,				1400,	ROOKIE),
+		new /datum/data/stalker_equipment("Beretta 92FS Magazine",					"Ìàãàçèí ê Áåðåòòå 92FS",				/obj/item/ammo_box/magazine/stalker/m9x19marta,			1500,	ROOKIE),
+		new /datum/data/stalker_equipment("Beretta M38 Magazine",					"Ìàãàçèí ê Áåðåòòå M38",				/obj/item/ammo_box/magazine/stalker/berettam38,			1250,	ROOKIE),
+		new /datum/data/stalker_equipment("USP-match Magazine",						"Ìàãàçèí ê ÞÑÏ-Ìàò÷",					/obj/item/ammo_box/magazine/stalker/usp45,				2500,	ROOKIE),
+		new /datum/data/stalker_equipment("Desert Eagle Magazine",					".50 магазин для Desert Eagle",			/obj/item/ammo_box/magazine/stalker/desert,				2000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("PKM ammo belt box",						"7.62мм лента для ПКМ",					/obj/item/ammo_box/magazine/stalker/pkm,				20000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("7.62x51 Clip",							"Обойма 7.62x51мм",						/obj/item/ammo_box/stalker/cl762x51,					800,	ROOKIE)
 		),
 
 	/** Outer Clothing **/
@@ -135,8 +135,8 @@ var/list/global_sidormat_list = list(
 		new	/datum/data/stalker_equipment("Exoskeleton",				"Экзоскелет",				/obj/item/clothing/suit/hooded/sealed/exoskelet,			1000000,	EXPERT,		assortment_level = 500)
 	),
 
+	// Headwear
 	"Masks and Helmets" = list(
-		////////////////////////////	Ìàñêè, Øëåìû	/////////////////////////////////////
 		new /datum/data/stalker_equipment("Gas Mask",					"Противогаз",					/obj/item/clothing/mask/gas/stalker,							7500,	ROOKIE),
 		new /datum/data/stalker_equipment("Mercenary Gas Mask",			"Противогаз наёмника",			/obj/item/clothing/mask/gas/stalker/mercenary,					7500,	ROOKIE),
 		new /datum/data/stalker_equipment("Steel Helmet",				"Стальной шлем",				/obj/item/clothing/head/steel,									7500,	ROOKIE),
@@ -201,11 +201,11 @@ var/list/global_sidormat_list = list(
 		new /datum/data/stalker_equipment("Balaclava",							"Áàëàêëàâà",											/obj/item/clothing/mask/balaclava,							700,	ROOKIE)
 		),
 
+	// Artifact detectors
 	"Detectors" = list(
-		/////////////////////////////////	Äåòåêòîðû	///////////////////////////////////////////
-		new /datum/data/stalker_equipment("Blink", 		"Îòêëèê",					/obj/item/device/detector/blink,				4000,	ROOKIE),
-		new /datum/data/stalker_equipment("Bear",		"Ìåäâåäü",					/obj/item/device/detector/bear,					12000,	EXPERIENCED),
-		new /datum/data/stalker_equipment("Veles",		"Âåëåñ",					/obj/item/device/detector/veles,				36000,	VETERAN),
+		new /datum/data/stalker_equipment("Blink", 		"Отклик",					/obj/item/device/detector/blink,				4000,	ROOKIE),
+		new /datum/data/stalker_equipment("Bear",		"Медведь",					/obj/item/device/detector/bear,					12000,	EXPERIENCED),
+		new /datum/data/stalker_equipment("Veles",		"Велес",					/obj/item/device/detector/veles,				36000,	VETERAN),
 		),
 
 	"Attachments" = list(
@@ -472,8 +472,8 @@ var/list/global_sidormat_list = list(
 	var/assortment_level = 0
 
 
-	for(var/obj/machinery/stalker/sidorpoint/cp in cps)
-		if(cp.controlled_by == sk.fields["faction_s"] && cp.control_percent == 100)
+	for(var/obj/machinery/stalker/sidorpoint/controllable_area in controllable_areas)
+		if(controllable_area.controlled_by == sk.fields["faction_s"] && controllable_area.control_percent == 100)
 			assortment_level++
 
 	return assortment_level

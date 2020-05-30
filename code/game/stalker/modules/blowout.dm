@@ -179,11 +179,6 @@ var/blowout_count = 0
 		J.total_positions = initial(J.total_positions)
 		CHECK_TICK
 
-	for(var/obj/machinery/stalker/sidorpoint/SP in cps)
-
-		SP.SendJobTotalPositions()
-		CHECK_TICK
-
 	for(var/obj/structure/stalker/cacheable/C in world)
 
 		if(C.internal_cache)
