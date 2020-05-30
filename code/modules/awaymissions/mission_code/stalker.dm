@@ -141,29 +141,29 @@
 	icon_state = "admin_space"
 	requires_power = 1
 
-/** Kordon Map **/
+/** Cordon Map **/
 
-// Kordon
-/area/stalker/kordon
-	//icon = 'icons/stalker/map/kordon/kordon.dmi'
+// Cordon
+/area/stalker/cordon
+	//icon = 'icons/stalker/map/cordon/cordon.dmi'
 	requires_power = 1
 
-/area/stalker/kordon/buildings
+/area/stalker/cordon/buildings
 	name = "Buildings"
 	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "buildings"
 
-/area/stalker/blowout/kordon/buildings
+/area/stalker/blowout/cordon/buildings
 	name = "Buildings"
 	icon = 'icons/stalker/areas_buildings_blowout.dmi'
 	icon_state = "buildings"
 
-/area/stalker/kordon/cellar
+/area/stalker/cordon/cellar
 	name = "Cellar"
 	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "cellar"
 
-/area/stalker/kordon/tunnel
+/area/stalker/cordon/tunnel
 	name = "Tunnel"
 	icon = 'icons/stalker/areas_buildings.dmi'
 	icon_state = "tunnel"
@@ -208,14 +208,14 @@
 				)
 	ambient_environment_cooldown = 800
 
-/area/stalker/blowout/kordon/tunnel
+/area/stalker/blowout/cordon/tunnel
 	name = "Tunnel"
 	icon = 'icons/stalker/areas_buildings_blowout.dmi'
 	icon_state = "tunnel"
 
 // Agroprom
 /area/stalker/agroprom
-	icon = 'icons/stalker/map/kordon/agroprom.dmi'
+	icon = 'icons/stalker/map/cordon/agroprom.dmi'
 	requires_power = 1
 
 /area/stalker/agroprom/buildings
@@ -303,7 +303,7 @@
 
 // Rostok
 /area/stalker/rostok
-	icon = 'icons/stalker/map/kordon/rostok.dmi'
+	icon = 'icons/stalker/map/cordon/rostok.dmi'
 	requires_power = 1
 
 /area/stalker/rostok/bar
