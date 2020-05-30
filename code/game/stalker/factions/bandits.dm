@@ -11,7 +11,7 @@
 	title = "Bandit"
 	faction_s = "Bandits"
 	faction = "Station"
-	total_positions = 5
+	total_positions = -1
 	spawn_positions = 5
 	supervisors = "Bandit Pahan"
 	selection_color = "#000000"
