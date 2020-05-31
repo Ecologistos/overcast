@@ -31,7 +31,7 @@ var/list/obj/machinery/stalker/sidorpoint/controllable_areas = list()
 
 	var/unlocked_weapons	= null
 
-	var/area_name = null
+	var/area_name = ""
 	var/obj/machinery/stalker/sidormat/special/connected_sidormat = null
 
 /**
@@ -40,15 +40,10 @@ var/list/obj/machinery/stalker/sidorpoint/controllable_areas = list()
 /obj/machinery/stalker/sidorpoint/New()
 	..()
 
-	area_name = get_area(src).name
+	name = "SIDORPOINT ([get_area(src).name])"
+	location = locate(text2path("/area/stalker/[area_name]"))
 
-	name = "SIDORPOINT ([area_name])"
 	controllable_areas += src
-
-	var/lowercase_map_name = lowertext(MAP_NAME)
-
-	// FIXME: This is a crutch that works because so far the only capturable areas are blowout-protected
-	location = locate(text2path("/area/stalker/[lowercase_map_name]/[area_name]"))
 
 	update_description()
 
@@ -121,6 +116,8 @@ var/list/obj/machinery/stalker/sidorpoint/controllable_areas = list()
  * "Life" process.
 **/
 /obj/machinery/stalker/sidorpoint/process()
+	var/area/area = get_area(src)
+
 	if (!connected_sidormat)
 		connected_sidormat = locate(/obj/machinery/stalker/sidormat/special) in location
 	else
@@ -146,7 +143,7 @@ var/list/obj/machinery/stalker/sidorpoint/controllable_areas = list()
 		if (control_percent >= 100)
 
 			control_percent = 100
-			add_lenta_message(null, "0", "Sidorovich", "Loners", "[controlled_by] captured [get_area(src).name].")
+			add_lenta_message(null, "0", "Sidorovich", "Loners", "[controlled_by] captured [area.name].")
 			say("[get_area(src).name] is captured  by [controlled_by]!")
 			capturing_faction = null
 
@@ -158,8 +155,8 @@ var/list/obj/machinery/stalker/sidorpoint/controllable_areas = list()
 			if (control_percent <= 0)
 
 				control_percent = 0
-				add_lenta_message(null, "0", "Sidorovich", "Loners", "[controlled_by] lost control of [get_area(src).name].")
-				say("[controlled_by] lost control of [get_area(src).name]!")
+				add_lenta_message(null, "0", "Sidorovich", "Loners", "[controlled_by] lost control of [area.name].")
+				say("[controlled_by] lost control of [area.name]!")
 				controlled_by = capturing_faction
 
 /**
@@ -202,6 +199,8 @@ var/list/obj/machinery/stalker/sidorpoint/controllable_areas = list()
 /obj/machinery/stalker/sidormat/special
 	desc     = "Точка дистанционной торговли \"Сидормат\", оснащённая каналом связи с инструментом контроля местностей \"Сидорпоинт\"."
 	eng_desc = "\"Sidormat\" remote vendor, outfitted with a communication channel to an area control \"Sidorpoint\" machine."
+
+	icon_state = "radio"
 
 	switches = SHOW_FACTION_EQUIPMENT
 
