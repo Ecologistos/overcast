@@ -16,9 +16,9 @@
 		"Fireball","Firely","Flame","Compass","Bubble","a broken mind","Eye","Shell","return to the CNPP","a wish invoked","burning",
 		"cutting","slicing","a lost limb","directionless","formless","abandon","Meat Chunk","Goldfish","Flash","Stone Flower","Stone Blood",
 		"Sparkler","Soul","Snowflake","Mama's Beads","Mica","the great unknown","forgotten","lost","sanctuary","respite","overwhelming desire",
-		"Strelok",
+		"Strelok"
+	)
 
-		)
 	spawn(0)
 		for(var/i = rand(1,4),i > 0, i--)
 			var/dream_image = pick(dreams)
