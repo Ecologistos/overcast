@@ -1,5 +1,5 @@
 /mob/living/carbon/human/say(message, bubble_type,)
-	message = trim(copytext(sanitize(message), 1, MAX_MESSAGE_LEN))
+	message = trim(copytext_char(sanitize(message), 1, MAX_MESSAGE_LEN))
 
 	if(stat == DEAD)
 		say_dead(message)
@@ -17,11 +17,11 @@
 		return
 
 	if(message_mode == MODE_HEADSET || message_mode == MODE_ROBOT)
-		message = copytext(message, 2)
+		message = copytext_char(message, 2)
 	else if(message_mode)
-		message = copytext(message, 3)
+		message = copytext_char(message, 3)
 	if(findtext(message, " ", 1, 2))
-		message = copytext(message, 2)
+		message = copytext_char(message, 2)
 
 	if(handle_inherent_channels(message, message_mode)) //Hiveminds, binary chat & holopad.
 		return
@@ -165,15 +165,15 @@
 				temp = replacetext(temp, ";", "")	//general radio
 
 				if(findtext(trim_left(temp), ":", 6, 7))	//dept radio
-					temp = copytext(trim_left(temp), 8)
+					temp = copytext_char(trim_left(temp), 8)
 					virgin = 0
 
 				if(virgin)
-					temp = copytext(trim_left(temp), 6)	//normal speech
+					temp = copytext_char(trim_left(temp), 6)	//normal speech
 					virgin = 0
 
 				while(findtext(trim_left(temp), ":", 1, 2))	//dept radio again (necessary)
-					temp = copytext(trim_left(temp), 3)
+					temp = copytext_char(trim_left(temp), 3)
 
 				if(findtext(temp, "*", 1, 2))	//emotes
 					return
