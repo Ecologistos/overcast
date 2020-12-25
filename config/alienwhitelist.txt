@@ -1,0 +1,16 @@
+narcissf = Duty Lieutenant
+narcissf = Mercenary Sql
+narcissf = Monolith Hegumen
+xrenoid = Trader
+narcissf = Freedom
+narcissf = Freedom Lieutenant
+drunktess = Freedom Lieutenant
+diablo1326 = Freedom Lieutenant
+zergursh = Duty Lieutenant
+xrenoid = Duty Lieutenant
+mileswolfe = Freedom Lieutenant
+mileswolfe = Old Stalker
+mileswolfe = Duty Lieutenant
+mileswolfe = Trader
+mileswolfe = Mercenary Sql
+mileswolfe = Monolith Hegumen
