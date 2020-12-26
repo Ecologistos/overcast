@@ -66,15 +66,15 @@
 	var/wikiurl = "http://www.tgstation13.org/wiki" // Default wiki link.
 	var/forumurl = "http://tgstation13.org/phpBB/index.php" //default forums
 	var/rulesurl = "http://www.tgstation13.org/wiki/Rules" // default rules
-	var/githuburl = "https://github.com/Stalkeros2/overcast" //default github
+	var/githuburl = "https://www.github.com/tgstation/-tg-station" //default github
 
 	var/forbid_singulo_possession = 0
 	var/useircbot = 0
 
-	var/admin_legacy_system = 1	//Defines whether the server uses the legacy admin system with admins.txt or the SQL system. Config option in config.txt
+	var/admin_legacy_system = 0	//Defines whether the server uses the legacy admin system with admins.txt or the SQL system. Config option in config.txt
 	var/ban_legacy_system = 0	//Defines whether the server uses the legacy banning system with the files in /data or the SQL system. Config option in config.txt
 	var/use_age_restriction_for_jobs = 0 //Do jobs use account age restrictions? --requires database
-	var/see_own_notes = 1 //Can players see their own admin notes (read-only)? Config option in config.txt
+	var/see_own_notes = 0 //Can players see their own admin notes (read-only)? Config option in config.txt
 
 	//Population cap vars
 	var/soft_popcap				= 0
