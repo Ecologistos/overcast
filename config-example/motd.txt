@@ -1,0 +1,12 @@
+<!-- Most valid html will work in here, excluding images. -->
+
+<h1>Welcome to S.T.A.L.K.E.R.: Overcast!</h1>
+
+<b>Discord: https://discord.gg/huh9kzS</b>
+
+This is a server where your roleplaying is your responsibility.
+You will not see long-winded rule sets, but you must abide by a simple maxim - do what makes sense for your character to do.
+Open hostility between warring factions is not uncommon, but shooting on sight is a very situational thing.
+
+Remember: our rules may not be written in paragraphs, but there is a model of expected behaviour with the goal of an atmospheric experience.
+Feel free to adminhelp if something feels wrong.
